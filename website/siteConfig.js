@@ -8,10 +8,13 @@
 // See https://docusaurus.io/docs/site-config for all the possible
 // site configuration options.
 
+// Base url for documentation website
+const baseUrl = '/products/rocktomate/';
+
 // List of projects/orgs using your project for the users page.
 const users = [
   {
-    caption: 'User1',
+    caption: 'Elmar',
     // You will need to prepend the image path with your baseUrl
     // if it is not '/', like: '/test-site/img/image.jpg'.
     image: '/img/undraw_open_source.svg',
@@ -24,7 +27,7 @@ const siteConfig = {
   title: 'RockTomate', // Title for your website.
   tagline: 'RockTomate Documentation',
   url: 'https://support.hardcodelab.com', // Your website URL
-  baseUrl: '/products/rocktomate/', // Base URL for your project */
+  baseUrl: baseUrl, // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
   //   url: 'https://facebook.github.io',
   //   baseUrl: '/test-site/',
@@ -76,26 +79,38 @@ const siteConfig = {
   },
 
   // Add custom scripts here that would be placed in <script> tags.
-  scripts: ['https://buttons.github.io/buttons.js'],
+  scripts: [
+    'https://buttons.github.io/buttons.js',
+    'https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js',
+    baseUrl + 'js/code-block-buttons.js',
+  ],
 
   // On page navigation for the current documentation page.
   onPageNav: 'separate',
   // No .html extensions for paths.
   cleanUrl: true,
 
+  // Base url for all docs
+  docsUrl: '',
+
   // Open Graph and Twitter card images.
   ogImage: 'img/undraw_online.svg',
   twitterImage: 'img/undraw_tweetstorm.svg',
 
+  // Additional markdown options
+  markdownOptions: [{
+    html: true
+  }],
+
   // For sites with a sizable amount of content, set collapsible to true.
   // Expand/collapse the links and subcategories under categories.
-  // docsSideNavCollapsible: true,
+  //docsSideNavCollapsible: true,
 
   // Show documentation's last contributor's name.
-  // enableUpdateBy: true,
+  //enableUpdateBy: true,
 
   // Show documentation's last update time.
-  // enableUpdateTime: true,
+  //enableUpdateTime: true,
 
   // You may provide arbitrary config keys to be used as needed by your
   // template. For example, if you need your repo's URL...
