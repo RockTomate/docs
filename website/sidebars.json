@@ -5,9 +5,15 @@
       "info/requirements"
     ],
     "Basics": [
-      "basics/creating-job",
       "basics/setting-windows",
+      "basics/creating-job",
       "basics/adding-steps"
+    ],  
+    "User Interface": [
+      "ui/job-editor-window",
+      "ui/step-browser-window",
+      "ui/step-properties-window",
+      "ui/variables-window"
     ],
     "Variables": [
       "variables/variable-basics",
@@ -20,14 +26,7 @@
       "formulas/formula-basics",
       "formulas/calling-macros",
       "formulas/variables",
-      "formulas/type-conversion",
       "formulas/output-fields"
-    ],
-    "User Interface": [
-      "ui/job-editor-window",
-      "ui/step-browser-window",
-      "ui/step-properties-window",
-      "ui/variables-window"
     ],
     "Advanced": [
       "advanced/creating-step",

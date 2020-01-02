@@ -10,5 +10,6 @@
   },
   "devDependencies": {
     "docusaurus": "^1.14.3"
-  }
+  },
+  "license": "GPL-3.0-only"
 }
