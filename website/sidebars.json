@@ -2,12 +2,12 @@
   "docs": {
     "Information": [
       "info/intro",
-      "info/requirements"
+      "info/requirements",
+      "info/terminology"
     ],
     "Basics": [
       "basics/setting-windows",
-      "basics/creating-job",
-      "basics/adding-steps"
+      "basics/creating-job"
     ],  
     "User Interface": [
       "ui/job-editor-window",

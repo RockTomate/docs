@@ -3,4 +3,6 @@ id: setting-windows
 title: Setting up Windows
 ---
 
-Empty content
+## Opening Windows
+
+You can open windows by accessing menu item on top: `Tools/RockTomate`
