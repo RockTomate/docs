@@ -1,0 +1,39 @@
+{
+  "docs": {
+    "Information": [
+      "info/intro",
+      "info/requirements"
+    ],
+    "Basics": [
+      "basics/creating-job",
+      "basics/setting-windows",
+      "basics/adding-steps"
+    ],
+    "Variables": [
+      "variables/variable-basics",
+      "variables/root-variables",
+      "variables/defining-variables",
+      "variables/variable-banks",
+      "variables/variable-overriding"
+    ],
+    "Formulas": [
+      "formulas/formula-basics",
+      "formulas/calling-macros",
+      "formulas/variables",
+      "formulas/type-conversion",
+      "formulas/output-fields"
+    ],
+    "User Interface": [
+      "ui/job-editor-window",
+      "ui/step-browser-window",
+      "ui/step-properties-window",
+      "ui/variables-window"
+    ],
+    "Advanced": [
+      "advanced/creating-step",
+      "advanced/creating-macros",
+      "advanced/running-from-cli",
+      "advanced/type-conversion"
+    ]
+  }
+}
