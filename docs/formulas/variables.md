@@ -1,6 +1,6 @@
 ---
 id: variables
-title: Variables
+title: Variables (X)
 ---
 
 Empty Content

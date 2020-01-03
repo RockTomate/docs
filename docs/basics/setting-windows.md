@@ -1,6 +1,6 @@
 ---
 id: setting-windows
-title: Setting up Windows
+title: Setting up Windows (X)
 ---
 
 ## Opening Windows

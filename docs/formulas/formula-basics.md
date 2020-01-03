@@ -1,6 +1,6 @@
 ---
 id: formula-basics
-title: Formula Basics
+title: Formula Basics (X)
 ---
 
 Empty content
