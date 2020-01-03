@@ -3,4 +3,4 @@ id: variables
 title: Variables
 ---
 
-Empty content
+Empty Content

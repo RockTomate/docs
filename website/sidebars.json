@@ -19,7 +19,7 @@
     "Variables": [
       "variables/variable-basics",
       "variables/root-variables",
-      "variables/defining-variables",
+      "variables/creating-variables",
       "variables/variable-banks",
       "variables/variable-overriding"
     ],
@@ -30,9 +30,9 @@
       "formulas/output-fields"
     ],
     "Advanced": [
+      "advanced/running-from-cli",
       "advanced/creating-step",
       "advanced/creating-macros",
-      "advanced/running-from-cli",
       "advanced/type-conversion"
     ]
   }
