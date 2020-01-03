@@ -57,6 +57,7 @@ class Footer extends React.Component {
           </div>
           <div>
             <h5>More</h5>
+            <a href="https://assetstore.unity3d.com/">Asset Store</a>
             <a href="https://github.com/">Edit on GitHub</a>
           </div>
         </section>

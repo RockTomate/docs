@@ -14,6 +14,6 @@ RockTomate supports the following Unity versions:
 * 2019.2
 * 2019.3
 
-## .NET
+## .NET Scripting Backend
 
-RockTomate code is written to be able to compile with .Net 3.5 and above.
+RockTomate can be compiled in .Net 3.5 or newer.

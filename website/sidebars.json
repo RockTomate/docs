@@ -14,7 +14,8 @@
       "ui/job-editor-window",
       "ui/step-browser-window",
       "ui/step-properties-window",
-      "ui/variables-window"
+      "ui/variable-manager-window",
+      "ui/job-session-logs-window"
     ],
     "Variables": [
       "variables/variable-basics",
