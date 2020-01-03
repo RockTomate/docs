@@ -28,7 +28,8 @@
       "formulas/formula-basics",
       "formulas/calling-macros",
       "formulas/variables",
-      "formulas/output-fields"
+      "formulas/output-fields",
+      "formulas/multi-array-formulas"
     ],
     "Advanced": [
       "advanced/running-from-cli",
