@@ -256,7 +256,7 @@ Now that we’ve finished writing our Step logic, we can finally take it for a s
 
 ![](/products/rocktomate/assets/advanced/math-step-filled-fields.png)
 
-4. Drag a “Print Log” step, and have it print out %math_result% variable.
+4. Drag a “Print Log” step, and have it print out `%math_result%` variable.
 
 ![](/products/rocktomate/assets/advanced/console-step-math-step.png)
 

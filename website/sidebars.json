@@ -3,7 +3,8 @@
     "Information": [
       "info/intro",
       "info/requirements",
-      "info/terminology"
+      "info/terminology",
+      "info/updates"
     ],
     "Basics": [
       "basics/setting-windows",
