@@ -6,9 +6,9 @@
       "info/terminology",
       "info/updates"
     ],
-    "Basics": [
-      "basics/setting-windows",
-      "basics/creating-job"
+    "Workflows": [
+      "workflows/creating-job",
+      "workflows/running-job"
     ],  
     "User Interface": [
       "ui/job-editor-window",
