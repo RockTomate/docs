@@ -14,6 +14,8 @@ First things first, create a C# script inside of an Editor folder, or make sure 
 
 To make things easier to manage, place the script inside of `RockTomate/Scripts/Steps/` directory. Let’s name our script `MathStep`.
 
+> A naming convention that RockTomate uses is appending "Step" at the end of every `Step` class. This makes it easier to identify steps in a project folder.
+
 Add the following namespaces:
 
 ```csharp

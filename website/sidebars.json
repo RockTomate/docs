@@ -27,7 +27,7 @@
     "Formulas": [
       "formulas/formula-basics",
       "formulas/resolving-variables",
-      "formulas/calling-macros",
+      "formulas/macros",
       "formulas/output-fields",
       "formulas/multi-array-formulas"
     ],
