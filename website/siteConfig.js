@@ -9,7 +9,7 @@
 // site configuration options.
 
 // Base url for documentation website
-const baseUrl = '/products/rocktomate/';
+const baseUrl = '/';
 
 // List of projects/orgs using your project for the users page.
 const users = [

@@ -3,7 +3,7 @@ id: job-editor-window
 title: Job Editor Window
 ---
 
-![](/products/rocktomate/assets/ui/job-editor-window.png)
+![](/assets/ui/job-editor-window.png)
 
 Job Editor Window is the main part of RockTomate: this is where most time is spent editing Job and running Jobs.
 
@@ -87,7 +87,7 @@ Or can be disabled by toggling checkbox in a "Enabled" column.
 
 ### Runtime
 
-![](/products/rocktomate/assets/ui/job-editor-window-runtime.png)
+![](/assets/ui/job-editor-window-runtime.png)
 
 The window turns orange to indicate that the Job started running. You can't edit or select anything. 
 

@@ -9,7 +9,7 @@ A single Job can reference multiple variable banks.
 
 Just like anything else, variable bank references can either be directly referenced or resolved by a formula.
 
-![](/products/rocktomate/assets/variables/variable-banks.png)
+![](/assets/variables/variable-banks.png)
 
 
 ## Creating a Variable Bank
@@ -18,7 +18,7 @@ To create a Variable Bank, in the Assets window, navigate to `Create > RockTomat
 
 Double click on a variable bank and a familiar window pops up.
 
-![](/products/rocktomate/assets/variables/variable-bank-editor.png)
+![](/assets/variables/variable-bank-editor.png)
 
 From there, the workflow is the same as if you were creating custom variables for a Job: click + icon and create your desired variable. Once done, close the window.
 

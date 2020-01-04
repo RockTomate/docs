@@ -49,7 +49,7 @@ public class MathStep : SimpleStep
 
 Now, if you go back to Unity and let it compile our changes, we should see new Step in the Step Browser window.
 
-![](/products/rocktomate/assets/advanced/new-step.png)
+![](/assets/advanced/new-step.png)
 
 
 ## Adding Input Fields
@@ -113,7 +113,7 @@ public class MathStep : SimpleStep
 
 Add our new step into a Job, select it and you should see the following in the Inspector window:
 
-![](/products/rocktomate/assets/advanced/step-properties.png)
+![](/assets/advanced/step-properties.png)
 
 
 ## Marking fields as "Required"
@@ -131,7 +131,7 @@ public float ValueA;
 
 Fields marked as "required" will have an asterisk (*) symbol next to it.
 
-![](/products/rocktomate/assets/advanced/required-field.png)
+![](/assets/advanced/required-field.png)
 
 
 ## Adding Output Fields
@@ -149,7 +149,7 @@ public float Result;
 
 Now, if you come back to the editor, you’ll see a new field.
 
-![](/products/rocktomate/assets/advanced/new-output-field.png)
+![](/assets/advanced/new-output-field.png)
 
 
 ## Implementing Logic
@@ -254,10 +254,10 @@ Now that we’ve finished writing our Step logic, we can finally take it for a s
 2. Fill out the input fields
 3. Fill out the output field
 
-![](/products/rocktomate/assets/advanced/math-step-filled-fields.png)
+![](/assets/advanced/math-step-filled-fields.png)
 
 4. Drag a “Print Log” step, and have it print out `%math_result%` variable.
 
-![](/products/rocktomate/assets/advanced/console-step-math-step.png)
+![](/assets/advanced/console-step-math-step.png)
 
 5. Run the Job and your Unity console should show your desired number!
