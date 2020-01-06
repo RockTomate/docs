@@ -1,6 +1,6 @@
 ---
 id: creating-step
-title: Creating Step
+title: Creating a Step
 ---
 
 RockTomate has a flexible framework which allows you to create your own Steps and reuse them across different jobs with no hassle.
@@ -188,7 +188,7 @@ protected override bool OnStepStart()
 }
 ```
 
-This is the full `MathStep` class for reference
+Full C# Script for reference:
 
 ```csharp
 using HardCodeLab.RockTomate.Core.Steps;

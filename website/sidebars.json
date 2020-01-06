@@ -34,7 +34,7 @@
     "Advanced": [
       "advanced/running-from-cli",
       "advanced/creating-step",
-      "advanced/creating-macros",
+      "advanced/creating-macro",
       "advanced/type-conversion"
     ]
   }
