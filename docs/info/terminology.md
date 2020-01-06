@@ -19,7 +19,7 @@ Job stores steps, their properties/formulas and executes those steps in a given 
 
 Macro is a simple function which is executed within a Formula. Macros are methods that take multiple arguments and return a single value. An example of macro would be `sum(10, 30)`.
 
-You can read more about macros [here](formulas/calling-macros.md).
+You can read more about macros [here](formulas/macros.md).
 
 ## Design-Time
 

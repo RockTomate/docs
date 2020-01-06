@@ -7,7 +7,7 @@ There are multiple ways of running a Job.
 
 ## Running from GUI
 
-The first method you might already be familiar with is by pressing the Play button at the toolbar.
+The standard way is by pressing the Play button in [Job Editor Window](ui/job-editor-window.md).
 
 ![](assets/workflows/running-job-from-gui.gif)
 
@@ -16,6 +16,33 @@ The first method you might already be familiar with is by pressing the Play butt
 In the Project Window, locate the job that you'd like to run, right-click it and select `RockTomate > Run Job`
 
 ![](assets/workflows/running-job-from-context-menu.gif)
+
+## Running from C# Script
+
+You can run a job by calling a C# script
+
+### Starting Job
+
+```csharp
+HardCodeLab.RockTomate.Jobs.Start("Assets/AutomatedJob.rock.job.asset");
+```
+
+Alternatively, you can pass the variable of type `Job` into function.
+
+```csharp
+HardCodeLab.RockTomate.Jobs.Start(jobAssetFileReference);
+```
+
+> The asset file must be inside of Unity project and acknowledged by the AssetDatabase (call AssetDatabase
+> Note that these functions won't wait for the Job to finish and will immediately exit after being called.
+
+### Stopping Job
+
+Call this function if you want to stop a currently running Job.
+
+```csharp
+HardCodeLab.RockTomate.Jobs.Stop();
+```
 
 ## Running from CLI
 
