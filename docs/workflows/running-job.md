@@ -33,8 +33,8 @@ Alternatively, you can pass the variable of type `Job` into function.
 HardCodeLab.RockTomate.Jobs.Start(jobAssetFileReference);
 ```
 
-> The asset file must be inside of Unity project and acknowledged by the AssetDatabase (call AssetDatabase
-> Note that these functions won't wait for the Job to finish and will immediately exit after being called.
+> The asset file must be inside of Unity project and acknowledged by the AssetDatabase (call `AssetDatabase.Refresh()` for that).<br><br>
+> Note that these functions won't wait for the Job to finish and will exit immediately after being called.
 
 ### Stopping Job
 
