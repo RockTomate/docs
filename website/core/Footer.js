@@ -37,17 +37,17 @@ class Footer extends React.Component {
           </a>
           <div>
             <h5>Docs</h5>
-            <a href={this.docUrl('info/intro.html', this.props.language)}>
+            <a href={this.docUrl('info/intro.html', this.props.config.docsUrl)}>
               Introduction
             </a>
-            <a href={this.docUrl('info/updates.html', this.props.language)}>
+            <a href={this.docUrl('info/updates.html', this.props.config.docsUrl)}>
               Update History
             </a>
           </div>
           <div>
             <h5>Community</h5>
-            <a href="#">Forum Thread</a>
-            <a href="https://discordapp.com/">Discord</a>
+            <a href="https://forum.unity.com/threads/814203/">Forum Thread</a>
+            <a href="https://discord.gg/NzBspd5">Discord</a>
             <a
               href="https://twitter.com/HardCodeLab"
               target="_blank"
@@ -57,8 +57,8 @@ class Footer extends React.Component {
           </div>
           <div>
             <h5>More</h5>
-            <a href="https://assetstore.unity3d.com/">Asset Store</a>
-            <a href="https://github.com/">Edit on GitHub</a>
+            <a href="http://u3d.as/1EfM">Asset Store</a>
+            <a href="https://github.com/RockTomate/Docs">Edit on GitHub</a>
           </div>
         </section>
         <section className="copyright">{this.props.config.copyright}</section>
