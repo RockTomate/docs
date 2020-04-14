@@ -5,7 +5,7 @@ title: Update History
 
 ---
 
-## 1.0.2 (April, 2020)
+## 1.0.2 (14 April, 2020)
 
 ### Changes & Improvements
 - Minimum version raised to 2018.4.0f1
@@ -29,10 +29,10 @@ title: Update History
 - New output macro: `invert(%boolean%)` - inverts a resultant boolean and saves it to a variable
 
 ### Steps
-- New steps integration: Turbo Switch PRO
-- New steps integration: Turbo Builder PRO
-- New steps integration: Turbo Backup PRO
-- New steps integration: Maintainer
+- New Steps integration: [Turbo Builder PRO](https://assetstore.unity.com/packages/slug/98714)
+- New Steps integration: [Turbo Switch PRO](https://assetstore.unity.com/packages/slug/60040)
+- New Steps integration: [Turbo Backup PRO](https://assetstore.unity.com/packages/slug/98711)
+- New Steps integration: [Maintainer](https://assetstore.unity.com/packages/slug/32199)
 - [Compile DLL] Now auto-creates a missing directory instead of throwing an arbitrary error
 - [Upload to Asset Store] Fixed a bug when package would be corrupted
 
