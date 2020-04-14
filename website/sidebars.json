@@ -32,6 +32,7 @@
       "formulas/multi-array-formulas"
     ],
     "Advanced": [
+      "advanced/adding-third-party-steps",
       "advanced/running-from-cli",
       "advanced/creating-step",
       "advanced/creating-macro",
