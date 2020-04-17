@@ -6,6 +6,10 @@
       "info/terminology",
       "info/updates"
     ],
+    "References": [
+      "references/step-references",
+      "references/macro-references"
+    ],
     "Workflows": [
       "workflows/creating-job",
       "workflows/running-job"
