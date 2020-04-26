@@ -58,7 +58,13 @@ title: Update History
 
 
 ### Bug fixes
-
+- [Job Session Console] Fixed a bug when would sometimes throw exceptions
+- Fixed a bug when duplicating a "Run Job" step would throw errors
+- [Variable Bank Editor] Fixed a bug when changes wouldn't be saved when window is closed
+- Fixed a bug when nested macros would sometimes fail
+- Fixed a bug when formulas like `split("Hello, world", ',')` wouldn't parse
+- Fixed a bug when duplicating a Job asset file would also duplicate its unique Id
+- Fixed a bug when custom step drawers wouldn't be utilized
 
 ---
 
