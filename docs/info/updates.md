@@ -5,6 +5,63 @@ title: Update History
 
 ---
 
+## 1.0.3 (14 May, 2020)
+
+> Macro folder Hierarchy has changed. You need to delete "Macros" directory located inside 'RockTomate/Scripts/' before updating.
+
+### Changes & Improvements
+- RockTomate settings are now stored in "ProjectSettings" directory
+- Can now copy job variable values to clipboard (evaluates formulas as well)
+- [Step Browser] All categories are now sorted in alphabetical order
+- Added additional user settings in the "Preferences" window
+- [Formula] A string type is no longer assumed to be a collection type. This means that RockTomate won't attempt to iterate over every character of a string but instead iterate once, returning the whole string in the process.
+- [Job Editor] Dragging a Job asset now automatically creates a "Run Job" step with a dragged Job assigned
+- Job Session Log has been renamed to "Job Session Console"
+- [Job Session Console] Can now filter out specific log entries (shows main ones by default)
+- [Job Session Console] Can now sort log entries by Type
+- [Job Session Console] Double-clicking on a log entry  auto-focuses a related Step
+- [Job Session Console] Now automatically scrolls to the bottom by default
+- [Job Session Console] Log entries are now color coded by type to be easily identifiable
+- [Job Session Console] Removed unusable expand all/collapse all buttons
+- [Job Session Console] Added option to clear log entries from the window
+- [Job Session Console] Step row number is now a separate column instead of being printed along with a message
+- [Job Session Console] Hovering over a message will display the full message
+
+
+### Root Variables
+- Added: `%UnityDir%`
+- Added: `%IsTempProject%`
+- Added: `%AppVersion%`
+- Added: `%IsBuilding%`
+- Added: `%IsCompiling%`
+- Added: `%TimeSinceStartup%`
+- Added: `%HasCompilationErrors%`
+
+
+### Macros
+- Added: `trim()`
+- Added: `starts_with()`
+- Added: `ends_with()`
+
+
+### Steps
+- New Plugin Integration: [P.A.T.C.H](https://assetstore.unity.com/packages/tools/utilities/p-a-t-c-h-ultimate-patching-system-41417)
+- New Plugin Integration: [Bakery GPU Lightmapper](https://assetstore.unity.com/packages/tools/level-design/bakery-gpu-lightmapper-122218)
+- New Plugin Integration: [SG Patcher](https://assetstore.unity.com/packages/tools/utilities/sg-patcher-simple-assetbundles-alternative-163468)
+- Added: Print List
+- Added: Copy Asset
+- Added: Delete Asset
+- Added: Create ScriptableObject Asset
+- Added: Comment
+- [Compile DLL] Fixed issues when trying to compile scripts in Unity 2019.3 or later
+- [Print] Now prints to Unity Console by default. Printing to Job Session Console is now optional
+
+
+### Bug fixes
+
+
+---
+
 ## 1.0.2 (14 April, 2020)
 
 ### Changes & Improvements
