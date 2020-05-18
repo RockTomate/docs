@@ -5,66 +5,70 @@ title: Update History
 
 ---
 
-## 1.0.3 (14 May, 2020)
+## 1.0.3 (20 May, 2020)
 
-> Macro folder Hierarchy has changed. You need to delete "Macros" directory located inside 'RockTomate/Scripts/' before updating.
+> Due to the changes in the project hierarchy, the current version of RockTomate must be removed before the new one could be imported.<br><br>
+> Your existing jobs will be unaffected.
 
 ### Changes & Improvements
+
+#### General
+- [Job Editor] Can now run a single Step
 - RockTomate settings are now stored in "ProjectSettings" directory
 - Can now copy job variable values to clipboard (evaluates formulas as well)
 - [Step Browser] All categories are now sorted in alphabetical order
 - Added additional user settings in the "Preferences" window
-- [Formula] A string type is no longer assumed to be a collection type. This means that RockTomate won't attempt to iterate over every character of a string but instead iterate once, returning the whole string in the process.
-- [Job Editor] Dragging a Job asset now automatically creates a "Run Job" step with a dragged Job assigned
 - Job Session Log has been renamed to "Job Session Console"
-- [Job Session Console] Can now filter out specific log entries (shows main ones by default)
 - [Job Session Console] Can now sort log entries by Type
-- [Job Session Console] Double-clicking on a log entry  auto-focuses a related Step
-- [Job Session Console] Now automatically scrolls to the bottom by default
 - [Job Session Console] Log entries are now color coded by type to be easily identifiable
 - [Job Session Console] Removed unusable expand all/collapse all buttons
-- [Job Session Console] Added option to clear log entries from the window
-- [Job Session Console] Step row number is now a separate column instead of being printed along with a message
-- [Job Session Console] Hovering over a message will display the full message
+- [Job Session Console] Can now clear console window
+- Printed log entries give more information regarding the failed jobs
+- RockTomate related log entries are automatically printed out if Unity is running in Batch Mode
+- Added an option to clear cache directory and log entries (available in `Tools > RockTomate > Utils > Clear` menu option)
 
-
-### Root Variables
+#### Root Variables
 - Added: `%UnityDir%`
 - Added: `%IsTempProject%`
 - Added: `%AppVersion%`
 - Added: `%IsBuilding%`
 - Added: `%IsCompiling%`
 - Added: `%TimeSinceStartup%`
-- Added: `%HasCompilationErrors%`
 
-
-### Macros
+#### Macros
 - Added: `trim()`
 - Added: `starts_with()`
 - Added: `ends_with()`
 
-
-### Steps
-- New Plugin Integration: [P.A.T.C.H](https://assetstore.unity.com/packages/tools/utilities/p-a-t-c-h-ultimate-patching-system-41417)
+#### Steps
 - New Plugin Integration: [Bakery GPU Lightmapper](https://assetstore.unity.com/packages/tools/level-design/bakery-gpu-lightmapper-122218)
-- New Plugin Integration: [SG Patcher](https://assetstore.unity.com/packages/tools/utilities/sg-patcher-simple-assetbundles-alternative-163468)
 - Added: Print List
 - Added: Copy Asset
 - Added: Delete Asset
 - Added: Create ScriptableObject Asset
 - Added: Comment
-- [Compile DLL] Fixed issues when trying to compile scripts in Unity 2019.3 or later
-- [Print] Now prints to Unity Console by default. Printing to Job Session Console is now optional
-
+- [Print] Now prints to Unity Console by default
+- [Print] Added an option to print to Job Session Console (disabled by default)
 
 ### Bug fixes
+
+#### General
 - [Job Session Console] Fixed a bug when would sometimes throw exceptions
-- Fixed a bug when duplicating a "Run Job" step would throw errors
 - [Variable Bank Editor] Fixed a bug when changes wouldn't be saved when window is closed
+- [Variable Bank Editor] Fixed a bug when Variable Banks created in newer Unity versions would throw null reference exceptions in older Unity versions
+- Fixed a bug when creating a variable bank in the "External Tab" would break Run Job's TargetJob Field
+- Fixed a bug when whitespace at the end of formula input would skip the formula evaluation stage
 - Fixed a bug when nested macros would sometimes fail
 - Fixed a bug when formulas like `split("Hello, world", ',')` wouldn't parse
-- Fixed a bug when duplicating a Job asset file would also duplicate its unique Id
+- Fixed a bug when duplicated Job and the original Job would share the same Id, causing errors down the line
 - Fixed a bug when custom step drawers wouldn't be utilized
+
+#### Steps
+- [Compile DLL] Fixed issues when trying to compile scripts in Unity 2019.3 or later
+- [Run Job Step] Fixed a bug when step wouldn't fail if nested Job fails
+- [Run Job Step] Fixed a bug when duplication of this step would throw an error
+- [Run Job Step] Fixed a bug when exceptions would be thrown for nested Jobs with loop-able steps (e.g. Loop, Repeat etc.)
+- [Run Job Step] Fixed a bug when nested Job would continue execution even after parent Job execution has been interrupted
 
 ---
 
@@ -143,6 +147,6 @@ title: Update History
 
 ---
 
-## 1.0.0 (1 January, 2020)
+## 1.0.0 (5 February, 2020)
 
 🎂 Initial release
