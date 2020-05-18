@@ -19,7 +19,7 @@
       "ui/step-browser-window",
       "ui/step-properties-window",
       "ui/variable-manager-window",
-      "ui/job-session-logs-window"
+      "ui/job-session-console-window"
     ],
     "Variables": [
       "variables/variable-basics",
