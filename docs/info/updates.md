@@ -5,7 +5,7 @@ title: Update History
 
 ---
 
-## 1.0.3 (20 May, 2020)
+## 1.0.3 (21 May, 2020)
 
 > Due to the changes in the project hierarchy, the current version of RockTomate must be removed before the new one could be imported.<br><br>
 > Your existing jobs will be unaffected.
