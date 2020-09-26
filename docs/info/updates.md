@@ -19,7 +19,7 @@ title: Update History
 - Can now run Job from the Inspector Window when it's selected
 - [Condition Editor Control] Minor GUI tweaks
 - [Job Editor Window] Can now quickly open previous Job files
-- [Formula] Can now run multiple macros in a single formula (not just nested) using string interpolation
+- [Formula] Can now run multiple macros in a single formula (not just nested) using [String Interpolation](../formulas/string-interpolation.md)
 
 #### Macros
 - Added: `if()`
