@@ -21,6 +21,9 @@ title: Update History
 - [Job Editor Window] Can now quickly open previous Job files
 - [Formula] Can now run multiple macros in a single formula (not just nested) using [String Interpolation](../formulas/string-interpolation.md)
 
+#### Root Variables
+- Added: `%LibraryDir%`
+
 #### Macros
 - Added: `if()`
 - Added: `envar()`
