@@ -24,3 +24,9 @@ To dictate which jobs to run when given event is triggered, add a job file by pr
 And we're done! Now, whenever a subscribed event is triggered (in this example, after Unity successfully finishes building a project) a job will be executed.
 
 But what if we took this further?
+
+## Job Execution Order
+
+Adding multiple Jobs would have them run one-by-one from top to bottom. Order of execution can be changed.
+
+![](../assets/event-manager/event-manager-reorder-job-execution.gif)

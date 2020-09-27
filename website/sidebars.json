@@ -23,7 +23,8 @@
     ],
     "Event Manager": [
       "event-manager/event-manager-overview",
-      "event-manager/event-manager-getting-started"
+      "event-manager/event-manager-getting-started",
+      "event-manager/event-manager-job-execution-properties"
     ],
     "Variables": [
       "variables/variable-basics",
