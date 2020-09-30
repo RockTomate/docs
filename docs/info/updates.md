@@ -5,7 +5,7 @@ title: Update History
 
 ---
 
-## 1.1.0 (28 September, 2020)
+## 1.1.0 (1 October, 2020)
 
 ### Changes & Improvements
 
