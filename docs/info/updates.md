@@ -5,6 +5,42 @@ title: Update History
 
 ---
 
+## 1.1.0 (1 October, 2020)
+
+### Changes & Improvements
+
+#### General
+- Added Event Manager - allows you to configure RockTomate to automatically run jobs if certain events happen (e.g. new asset gets imported into project)
+- [Variable Manager] Persistent variables - persist variable values between job executions
+- [Variable Manager] Added new variable type: "Version"
+- Added support for Unity 2019.4
+- Added support for Unity 2020.1
+- RockTomate Jobs progress is now visible in the "Background Tasks" window (Unity 2020.1 or newer)
+- Can now run Job from the Inspector Window when it's selected
+- [Condition Editor Control] Minor GUI tweaks
+- [Job Editor Window] Can now quickly open previous Job files
+- [Formula] Can now run multiple macros in a single formula (not just nested) using [String Interpolation](../formulas/string-interpolation.md)
+
+#### Root Variables
+- Added: `%LibraryDir%`
+
+#### Macros
+- Added: `if()`
+- Added: `envar()`
+- Added: `asset_type()`
+- Added: `incr()`
+- Added: `decr()`
+
+### Bug fixes
+
+#### General
+- [General] Fixed a bug when Unity would freeze when running a Job at random times
+- [Step Browser Window] Fixed an error when double-clicking on a Step while Job Editor is not visible
+- [Variable Bank Window] Fixed a bug when variables wouldn't be created correctly when Job Editor didn't have any Jobs to edit
+- [Variable Manager Window] Fixed a bug when you couldn't drag first variable bank into "External" tab
+
+---
+
 ## 1.0.3 (21 May, 2020)
 
 > Due to the changes in the project hierarchy, the current version of RockTomate must be removed before the new one could be imported.<br><br>
@@ -85,17 +121,17 @@ title: Update History
 - Macro arguments now support single quotes
 - RockTomate's temp directory has been moved to Unity's "Temp" directory
 
-### Root Variables
+#### Root Variables
 - New root variable: `%CompileSymbols%`
 - New root variable: `%IsOnline%`
 
-### Macros
+#### Macros
 - New input macro: `contains(%array%, %item%)` - checks if array contains an item
 - New input macro: `pretty(%string%)` - prettifies a string (adds space between capital letters)
 - New input macro: `invert(%boolean%)` - inverts a boolean
 - New output macro: `invert(%boolean%)` - inverts a resultant boolean and saves it to a variable
 
-### Steps
+#### Steps
 - New Steps integration: [Turbo Builder PRO](https://assetstore.unity.com/packages/slug/98714)
 - New Steps integration: [Turbo Switch PRO](https://assetstore.unity.com/packages/slug/60040)
 - New Steps integration: [Turbo Backup PRO](https://assetstore.unity.com/packages/slug/98711)
@@ -126,7 +162,7 @@ title: Update History
 - Added %WorkDir% root variable - resolves a current working directory of Unity
 - Step property fields now properly updated when Step class is modified (e.g. adding or removing a new field etc.)
 
-### Steps
+#### Steps
 
 - New Step: WHILE Loop
 - New Step: Upload to Asset Store

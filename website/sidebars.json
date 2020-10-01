@@ -21,19 +21,26 @@
       "ui/variable-manager-window",
       "ui/job-session-console-window"
     ],
+    "Event Manager": [
+      "event-manager/event-manager-overview",
+      "event-manager/event-manager-getting-started",
+      "event-manager/event-manager-job-execution-properties"
+    ],
     "Variables": [
       "variables/variable-basics",
       "variables/root-variables",
       "variables/creating-variables",
       "variables/variable-banks",
-      "variables/variable-overriding"
+      "variables/variable-overriding",
+      "variables/persistent-variables"
     ],
     "Formulas": [
       "formulas/formula-basics",
       "formulas/resolving-variables",
       "formulas/macros",
       "formulas/output-fields",
-      "formulas/multi-array-formulas"
+      "formulas/multi-array-formulas",
+      "formulas/string-interpolation"
     ],
     "Advanced": [
       "advanced/adding-third-party-steps",

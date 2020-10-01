@@ -20,7 +20,8 @@ Right-clicking a variable will let you copy it to the clipboard to save the trou
 | `%AppDataDir%` | `String` | Path to the "AppData" directory of the local machine. |
 | `%AppVersion%` | `String` | Current version of the player application. |
 | `%AssetsDir%` | `String` | File path to the "Assets" directory of the Unity project. |
-| `%BuildGUID%` | `String` | GUID of this player build. |
+| `%LibraryDir%` | `String` | File path to the "Library" directory of the Unity project. |
+| `%BuildGUID%` | `String` | GUID of this player build (Unity 5.6 and above). |
 | `%CloudProjectID%` | `String` | Cloud Project GUID. |
 | `%CommandLineArgs%` | `String[]` | Command line arguments that were launched with this Unity executable. |
 | `%CompanyName%` | `String` | Name of the company as specified in Project Settings. |
