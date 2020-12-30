@@ -6,7 +6,7 @@ title: Running from CLI
 You can also run RockTomate jobs from the command-line interface when you’re running Unity in batch mode. 
 
 ```shell
-"D:\Unity\2017.4.27f1\Editor\Unity.exe" -batchMode -projectPath "D:\Projects\HardCodeLab\RockTomate" -executeMethod "HardCodeLab.RockTomate.CLI.RunJob" "Assets/AutomatedJob.rock.job"
+"C:\Path\To\Unity.exe" -batchMode -projectPath "D:\Projects\HardCodeLab\RockTomate" -executeMethod "HardCodeLab.RockTomate.CLI.RunJob" "Assets/AutomatedJob.rock.job"
 ```
 
 ## Arguments
