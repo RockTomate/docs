@@ -3,6 +3,24 @@ id: updates
 title: Update History
 ---
 
+## 1.1.1 (7 January, 2021)
+
+### Changes & Improvements
+
+#### General
+
+- [Job Editor Window] Improved performance when large Jobs with lots of steps are rendered
+- Added support for Unity 2020.2
+- Upgraded Odin Serializer version
+
+### Bug fixes
+
+#### General
+- Fixed serialization issues when trying to run Steps that have fields of type `Unity.Object`
+- Fixed a bug that caused Unity to freeze occasionally when duplicating Jobs or Variable Banks (using `CTRL/CMD + D` shortcut command)
+- Fixed a bug that caused Unity to freeze occasionally when starting a project
+- Fixed a bug when menu item at `Tools > RockTomate > Utils > Open Directory > Project Root` wouldn't open root of the project directory
+
 ---
 
 ## 1.1.0 (1 October, 2020)
