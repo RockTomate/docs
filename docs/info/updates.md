@@ -12,6 +12,7 @@ title: Update History
 - [Job Editor Window] Improved performance when large Jobs with lots of steps are rendered
 - Added support for Unity 2020.2
 - Upgraded Odin Serializer version
+- New Step status: `Unknown`. If you see it, that means there was an internal error when trying to retrieve Step's status. Keep an eye out for it and if you see it, report it.
 
 ### Bug fixes
 
