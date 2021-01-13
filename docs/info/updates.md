@@ -3,7 +3,7 @@ id: updates
 title: Update History
 ---
 
-## 1.1.1 (7 January, 2021)
+## 1.1.1 (13 January, 2021)
 
 ### Changes & Improvements
 
