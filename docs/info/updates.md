@@ -3,6 +3,40 @@ id: updates
 title: Update History
 ---
 
+## 1.1.2 (15 February, 2021)
+
+### Changes & Improvements
+
+#### General
+
+- Can now run Jobs via shortcuts (Unity 2019.1 or newer). [Read here](#) to learn more
+
+#### Job Editor Window
+- Can now open recent jobs when no job has been selected
+- Disabled "Run This" option for Comment steps
+
+#### Steps
+- Added Git-related steps (available in .NET 4.6 or higher only):
+    - Git Init
+    - Git Push X
+    - Git Pull X
+    - Apply Tag
+    - Get Files X
+    - Create Branch X
+    - Checkout Branch X
+- [Run Job Step] Added "Auto Run" option
+- Improved description of steps X
+
+#### Root Variables
+- Added: `%ScriptableRuntimeVersion%`
+
+### Bug fixes
+
+#### General
+- Fixed a bug when RockTomate's preferences could not be edited with `SerializedObject target has been destroyed` error being printed all the time
+
+---
+
 ## 1.1.1 (13 January, 2021)
 
 ### Changes & Improvements
