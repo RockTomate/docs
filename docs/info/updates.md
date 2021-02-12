@@ -20,11 +20,15 @@ title: Update History
     - Git Init
     - Git Push X
     - Git Pull X
+    - Git Add
+    - Git Remove
     - Apply Tag
+    - Get Branches
     - Get Files X
-    - Create Branch X
-    - Checkout Branch X
-- [Run Job Step] Added "Auto Run" option
+    - Create Branch
+    - Checkout Branch
+- [Run Job] Added "Auto Run" option
+- [Build Player] Added "Manual Cancel Fails Step" option (enabled by default). Cancelling building process manually will no longer mark Step as successful by default.
 - Improved description of steps X
 
 #### Root Variables
