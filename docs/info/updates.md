@@ -18,21 +18,31 @@ title: Update History
 #### Steps
 - Added Git-related steps (available in .NET 4.6 or higher only):
     - Git Init
-    - Git Push X
-    - Git Pull X
+    - Git Push `X`
+    - Git Pull `X`
     - Git Add
     - Git Remove
     - Apply Tag
     - Get Branches
-    - Get Files X
+    - Get Work Directory Files
+    - Compare Commits
     - Create Branch
     - Checkout Branch
+- [Print List] Fixed an issue when trying to print with an empty list would fail this Step
 - [Run Job] Added "Auto Run" option
 - [Build Player] Added "Manual Cancel Fails Step" option (enabled by default). Cancelling building process manually will no longer mark Step as successful by default.
-- Improved description of steps X
+- Improved description of steps `X`
+
+#### Macros
+- Added: `is_git_repo()`
+- Added: `get_git_last_commit_hash()`
+- Added: `get_git_current_branch()`
 
 #### Root Variables
 - Added: `%ScriptableRuntimeVersion%`
+- Added: `%IsGitRepo%`
+- Added: `%GitLastCommitHash%`
+- Added: `%GitCurrentBranch%`
 
 ### Bug fixes
 
