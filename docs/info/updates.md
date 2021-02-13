@@ -5,7 +5,7 @@ title: Update History
 
 ## 1.1.2 (15 February, 2021)
 
-> This version introduces a new dependency **LibGit2Sharp**
+> This version introduces a new dependency [**LibGit2Sharp**](https://github.com/libgit2/libgit2sharp)
 
 ### Changes & Improvements
 
