@@ -61,3 +61,7 @@ Right-clicking a variable will let you copy it to the clipboard to save the trou
 | `%UnityVersion%` | `String` | Version of this Unity Editor. |
 | `%VolumeSeparatorChar%` | `Char` | Character separator for volumes. |
 | `%WorkDir%` | `String` | Current working directory. |
+| `%ScriptableRuntimeVersion%` | `ScriptingRuntimeVersion` | Unity project's scriptable runtime version. |
+| `%IsGitRepo%` | `Boolean` | Whether this project is a Git repository. |
+| `%GitLastCommitHash%` | `String` | Commit hash (SHA format) of the last commit. Empty if the current project is not a Git repository. |
+| `%GitCurrentBranch%` | `String` | Name of a currently checked out branch. Empty if the current project is not a Git repository. |
