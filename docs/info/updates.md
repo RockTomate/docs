@@ -5,15 +5,20 @@ title: Update History
 
 ## 1.1.2 (15 February, 2021)
 
+> This version introduces a new dependency **LibGit2Sharp**
+
 ### Changes & Improvements
 
 #### General
 
-- Can now run Jobs via shortcuts (Unity 2019.1 or newer). [Read here](#) to learn more
+- Can now run Jobs via [shortcuts](#) (Unity 2019.1 or newer)
 
 #### Job Editor Window
 - Can now open recent jobs when no job has been selected
 - Disabled "Run This" option for Comment steps
+
+#### Step Browser Window
+- Improved search algorithm
 
 #### Steps
 - Added Git-related steps (available in .NET 4.6 or higher only):
