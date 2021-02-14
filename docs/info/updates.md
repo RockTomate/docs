@@ -20,6 +20,12 @@ title: Update History
 #### Step Browser Window
 - Improved search algorithm
 
+#### Variable Manager Window
+- Can now reorder variables
+
+#### Variable Bank Editor Window
+- Can now reorder variables
+
 #### Steps
 - Added Git-related steps (available in .NET 4.6 or higher only):
     - Git Init
@@ -27,6 +33,7 @@ title: Update History
     - Git Pull `X`
     - Git Add
     - Git Remove
+    - Git Commit `X`
     - Apply Tag
     - Get Branches
     - Get Work Directory Files
