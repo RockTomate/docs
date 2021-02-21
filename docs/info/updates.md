@@ -3,7 +3,7 @@ id: updates
 title: Update History
 ---
 
-## 1.1.2 (15 February, 2021)
+## 1.1.2 (17 February, 2021)
 
 > This version introduces a new dependency [**LibGit2Sharp**](https://github.com/libgit2/libgit2sharp)
 
@@ -27,13 +27,14 @@ title: Update History
 - Can now reorder variables
 
 #### Steps
-- Added Git-related steps (available in .NET 4.6 or higher only):
-    - Git Init
-    - Git Push `X`
-    - Git Pull `X`
-    - Git Add
-    - Git Remove
-    - Git Commit `X`
+- Added 13 Git-related steps (.NET 4.6 or newer):
+    - Init
+    - Clone `X`
+    - Push `X`
+    - Pull `X`
+    - Add
+    - Remove
+    - Commit
     - Apply Tag
     - Get Branches
     - Get Work Directory Files
@@ -46,6 +47,7 @@ title: Update History
 - Improved description of steps `X`
 
 #### Macros
+- Added: `peel()`
 - Added: `is_git_repo()`
 - Added: `get_git_last_commit_hash()`
 - Added: `get_git_current_branch()`
@@ -59,7 +61,8 @@ title: Update History
 ### Bug fixes
 
 #### General
-- Fixed a bug when RockTomate's preferences could not be edited with `SerializedObject target has been destroyed` error being printed all the time
+- Fixed a bug when RockTomate's preferences could not be edited and `SerializedObject target has been destroyed` error being printed all the time
+- Fixed a one-time error when importing RockTomate into an empty project `X`
 
 ---
 
