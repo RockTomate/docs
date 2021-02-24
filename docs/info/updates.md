@@ -27,16 +27,15 @@ title: Update History
 - Can now reorder variables
 
 #### Steps
-- Added 13 Git-related steps (.NET 4.6 or newer):
+- Added: Run Unit Tests (requires [`com.unity.test-framework`](https://docs.unity3d.com/Packages/com.unity.test-framework@1.1))
+- Added 11 Git-related steps (.NET 4.6 or newer):
     - Init
-    - Clone `X`
-    - Push `X`
-    - Pull `X`
     - Add
     - Remove
     - Commit
     - Apply Tag
     - Get Branches
+    - Get Branch History `X`
     - Get Work Directory Files
     - Compare Commits
     - Create Branch
@@ -44,7 +43,6 @@ title: Update History
 - [Print List] Fixed an issue when trying to print with an empty list would fail this Step
 - [Run Job] Added "Auto Run" option
 - [Build Player] Added "Manual Cancel Fails Step" option (enabled by default). Cancelling building process manually will no longer mark Step as successful by default.
-- Improved description of steps `X`
 
 #### Macros
 - Added: `peel()`
