@@ -60,7 +60,6 @@ title: Update History
 
 #### General
 - Fixed a bug when RockTomate's preferences could not be edited and `SerializedObject target has been destroyed` error being printed all the time
-- Fixed a one-time error when importing RockTomate into an empty project `X`
 
 #### Job Editor Window
 - Fixed a bug when opening a Job wouldn't focus the window if it's already been opened before 
