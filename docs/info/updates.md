@@ -10,8 +10,8 @@ title: Update History
 ### Changes & Improvements
 
 #### General
-
 - Can now run Jobs via [shortcuts](#) (Unity 2019.1 or newer)
+- Memory management improvements
 
 #### Job Editor Window
 - Can now open recent jobs when no job has been selected
@@ -19,6 +19,9 @@ title: Update History
 
 #### Step Browser Window
 - Improved search algorithm
+
+#### Step Properties Window
+- Field types that have generics (e.g. `List<string>`) are now displayed correctly in tooltips
 
 #### Variable Manager Window
 - Can now reorder variables
@@ -28,14 +31,15 @@ title: Update History
 
 #### Steps
 - Added: Run Unit Tests (requires [`com.unity.test-framework`](https://docs.unity3d.com/Packages/com.unity.test-framework@1.1))
-- Added 11 Git-related steps (.NET 4.6 or newer):
+- Added 12 Git-related steps (.NET 4.6 or newer):
     - Init
     - Add
     - Remove
     - Commit
     - Apply Tag
+    - Get Repository
     - Get Branches
-    - Get Branch History `X`
+    - Get Branch History
     - Get Work Directory Files
     - Compare Commits
     - Create Branch
