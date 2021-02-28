@@ -64,13 +64,13 @@ title: Update History
 
 #### General
 - Fixed a bug when RockTomate's preferences could not be edited and `SerializedObject target has been destroyed` error being printed all the time
-- Fixed a bug when formula icons wouldn't render properly (Unity 2020.1 and above)
+- Fixed a bug when formula icons wouldn't render properly (Unity 2020.1 or newer)
 
 #### Job Editor Window
 - Fixed a bug when opening a Job wouldn't focus the window if it's already been opened before 
 
 #### Step Browser Window
-- Fixed a bug when step list items wouldn't render properly (Unity 2020.1 and above)
+- Fixed a bug when step list items wouldn't render properly (Unity 2020.1 or newer)
 
 ---
 
