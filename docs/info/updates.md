@@ -10,7 +10,7 @@ title: Update History
 ### Changes & Improvements
 
 #### General
-- Can now run Jobs via [shortcuts](#) (Unity 2019.1 or newer)
+- Can now run Jobs via [shortcuts](/workflows/running-job#running-using-shortcuts) (Unity 2019.1 or newer)
 - Memory management improvements
 
 #### Job Editor Window

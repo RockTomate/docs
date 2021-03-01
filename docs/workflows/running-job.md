@@ -17,6 +17,24 @@ In the Project Window, locate the job that you'd like to run, right-click it and
 
 ![](assets/workflows/running-job-from-context-menu.gif)
 
+## Running using Shortcuts
+
+> Requires Unity 2019.1 or newer
+
+You can also configure RockTomate to run specific jobs by pressing a combination of shortcut keys. You can map up to 10 jobs to 10 different shortcuts.
+
+Before we can specify shortcuts, we need to map a job asset to one of 10 available slots.
+
+You can do so by going to **Edit/Preferences/RockTomate** menu.
+
+![](assets/workflows/shortcut-mapping-preferences-menu.png)
+
+Once that done, you can navigate to **Edit/Shortcuts/RockTomate** and specify shortcut key for your mapping.
+
+![](assets/workflows/unity-shortcut-settings-rocktomate-mapping.png)
+
+And that's it! Triggering a shortcut will run a Job of your choosing. In the example above, pressing `CTRL + 1` will trigger a `BuildAllPlatforms` job.
+
 ## Running from C# Script
 
 You can run a job by calling a C# script
