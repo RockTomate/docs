@@ -3,6 +3,77 @@ id: updates
 title: Update History
 ---
 
+## 1.1.2 (1 March, 2021)
+
+> This version introduces a new dependency: [**LibGit2Sharp**](https://github.com/libgit2/libgit2sharp)
+
+### Changes & Improvements
+
+#### General
+- Can now run Jobs via [shortcuts](/workflows/running-job#running-using-shortcuts) (Unity 2019.1 or newer)
+- Memory management improvements
+
+#### Job Editor Window
+- Can now open recent jobs when no job has been selected
+- Disabled "Run This" option for Comment steps
+
+#### Step Browser Window
+- Improved search algorithm
+
+#### Step Properties Window
+- Field types that have generics (e.g. `List<string>`) are now displayed correctly in tooltips
+
+#### Variable Manager Window
+- Can now reorder variables
+
+#### Variable Bank Editor Window
+- Can now reorder variables
+
+#### Steps
+- Added: Run Unit Tests (requires [`com.unity.test-framework`](https://docs.unity3d.com/Packages/com.unity.test-framework@1.1))
+- Added 12 Git-related steps (.NET 4.6 or newer):
+    - Init
+    - Add
+    - Remove
+    - Commit
+    - Apply Tag
+    - Get Repository
+    - Get Branches
+    - Get Branch History
+    - Get Work Directory Files
+    - Compare Commits
+    - Create Branch
+    - Checkout Branch
+- [Print List] Fixed an issue when trying to print with an empty list would fail this Step
+- [Run Job] Added "Auto Run" option
+- [Build Player] Added "Manual Cancel Fails Step" option (enabled by default). Cancelling building process manually will no longer mark Step as successful by default.
+
+#### Macros
+- Added: `peel()`
+- Added: `is_git_repo()`
+- Added: `get_git_last_commit_hash()`
+- Added: `get_git_current_branch()`
+
+#### Root Variables
+- Added: `%ScriptableRuntimeVersion%`
+- Added: `%IsGitRepo%`
+- Added: `%GitLastCommitHash%`
+- Added: `%GitCurrentBranch%`
+
+### Bug fixes
+
+#### General
+- Fixed a bug when RockTomate's preferences could not be edited and `SerializedObject target has been destroyed` error being printed all the time
+- Fixed a bug when formula icons wouldn't render properly (Unity 2020.1 or newer)
+
+#### Job Editor Window
+- Fixed a bug when opening a Job wouldn't focus the window if it's already been opened before 
+
+#### Step Browser Window
+- Fixed a bug when step list items wouldn't render properly (Unity 2020.1 or newer)
+
+---
+
 ## 1.1.1 (13 January, 2021)
 
 ### Changes & Improvements

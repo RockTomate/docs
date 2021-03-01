@@ -3,6 +3,8 @@ id: root-variables
 title: Root Variables
 ---
 
+## Introduction
+
 Root variables are RockTomate's built-in variables that can be used from anywhere. They can be constant or dynamic. Examples would be a project directory path or even the name of a currently running job.
 
 To see all available root variables, click the “Root” tab in "Variable Manager" window. You'll be able to see values of constant root variables right away, but dynamic variables are marked as `<dynamic variable>`.
@@ -61,3 +63,7 @@ Right-clicking a variable will let you copy it to the clipboard to save the trou
 | `%UnityVersion%` | `String` | Version of this Unity Editor. |
 | `%VolumeSeparatorChar%` | `Char` | Character separator for volumes. |
 | `%WorkDir%` | `String` | Current working directory. |
+| `%ScriptableRuntimeVersion%` | `ScriptingRuntimeVersion` | Unity project's scriptable runtime version. |
+| `%IsGitRepo%` | `Boolean` | Whether this project is a Git repository. |
+| `%GitLastCommitHash%` | `String` | Commit hash (SHA format) of the last commit. Empty if the current project is not a Git repository. |
+| `%GitCurrentBranch%` | `String` | Name of a currently checked out branch. Empty if the current project is not a Git repository. |
