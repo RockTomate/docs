@@ -22,6 +22,8 @@ title: Update History
 - [Create GameObject] Now passes created game object as an output field
 
 #### Macros
+- Added: `is_empty()`
+- Added: `join()`
 
 #### Root Variables
 - Added: `%IncludedScenesInBuild%`
@@ -39,6 +41,7 @@ title: Update History
 
 #### Steps
 - [Create GameObject] Fixed a bug when step would create 2 same GameObjects instead of one
+- [Set Variable] Fixed an error if variable was not found when "Create New" option is disabled
 
 ---
 
