@@ -11,14 +11,15 @@ title: Update History
 - Added support for Unity 2020.3
 - Added support for Unity 2021.1
 - Event manager data file is now required to be manually assigned instead of being auto-created on project initialisation.
-- Added a shortcut option to stop a currently running RockTomate job. `X`
+- Added a shortcut option to stop a currently running RockTomate job.
 
 #### Variables
 - Can now create and edit array-type variables
 
 #### Steps
-- [Build Player] Added `File Name` field to ask for exported file name where needed. Extension will be appended depending on the chosen platform. `X`
+- [Build Player] Added `File Name` field to ask for exported file name where needed. Extension will be appended depending on the chosen platform.
     - *to clarify, the `Output Path` field is for folder output path and will always be required*
+- [Build Player] Now checks if the Build Target is supported by a currently running Unity engine
 - [Create GameObject] Now passes created game object as an output field
 
 #### Macros
@@ -28,8 +29,7 @@ title: Update History
 #### Root Variables
 - Added: `%IncludedScenesInBuild%`
 - Added: `%AllScenesInBuild%`
-- Added: `%HasUnpushedCommits%` `X`
-- Added: `HasUncommittedChanges` `X`
+- `%ScriptingRuntimeVersion%` no longer available in Unity versions 2019.3 and later as it's been deprecated
 
 ### Bug fixes
 
