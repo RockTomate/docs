@@ -67,3 +67,5 @@ Right-clicking a variable will let you copy it to the clipboard to save the trou
 | `%IsGitRepo%` | `Boolean` | Whether this project is a Git repository. |
 | `%GitLastCommitHash%` | `String` | Commit hash (SHA format) of the last commit. Empty if the current project is not a Git repository. |
 | `%GitCurrentBranch%` | `String` | Name of a currently checked out branch. Empty if the current project is not a Git repository. |
+| `%IncludedScenesInBuild%` | `String[]` | Scene paths of all scenes that are included in build configuration. |
+| `%AllScenesInBuild%` | `String[]` | Scene paths of all scenes that are included in build configuration (including disabled ones). |
