@@ -3,7 +3,7 @@ id: updates
 title: Update History
 ---
 
-## 1.1.3 (19 May, 2021)
+## 1.1.3 (25 May, 2021)
 
 ### Changes & Improvements
 
@@ -29,7 +29,7 @@ title: Update History
 #### Root Variables
 - Added: `%IncludedScenesInBuild%`
 - Added: `%AllScenesInBuild%`
-- `%ScriptingRuntimeVersion%` no longer available in Unity versions 2019.3 and later as it's been deprecated
+- `%ScriptingRuntimeVersion%` is no longer available in Unity versions 2019.3 and later as it's been deprecated
 
 ### Bug fixes
 
@@ -42,6 +42,7 @@ title: Update History
 #### Steps
 - [Create GameObject] Fixed a bug when step would create 2 same GameObjects instead of one
 - [Set Variable] Fixed an error if variable was not found when "Create New" option is disabled
+- [Run Job] Fixed a bug when formulas wouldn't be correctly resolved when overriding job variables
 
 ---
 
