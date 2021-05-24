@@ -3,6 +3,49 @@ id: updates
 title: Update History
 ---
 
+## 1.1.3 (24 May, 2021)
+
+### Changes & Improvements
+
+#### General
+- Added support for Unity 2020.3
+- Added support for Unity 2021.1
+- Event manager data file is now required to be manually assigned instead of being auto-created on project initialisation.
+- Added a shortcut option to stop a currently running RockTomate job.
+
+#### Variables
+- Can now create and edit array-type variables
+
+#### Steps
+- [Build Player] Added `File Name` field to ask for exported file name where needed. Extension will be appended depending on the chosen platform.
+    - *to clarify, the `Output Path` field is for folder output path and will always be required*
+- [Build Player] Now checks if the Build Target is supported by a currently running Unity engine
+- [Create GameObject] Now passes created game object as an output field
+
+#### Macros
+- Added: `is_empty()`
+- Added: `join()`
+
+#### Root Variables
+- Added: `%IncludedScenesInBuild%`
+- Added: `%AllScenesInBuild%`
+- `%ScriptingRuntimeVersion%` is no longer available in Unity versions 2019.3 and later as it's been deprecated
+
+### Bug fixes
+
+#### General
+- Fixed one-time compilation errors occurring when importing RockTomate for the first time
+
+#### Variables
+- Fixed a bug when variables that have formulas enabled would be modified when copying resolved value to clipboard
+
+#### Steps
+- [Create GameObject] Fixed a bug when step would create 2 same GameObjects instead of one
+- [Set Variable] Fixed an error if variable was not found when "Create New" option is disabled
+- [Run Job] Fixed a bug when formulas wouldn't be correctly resolved when overriding job variables
+
+---
+
 ## 1.1.2 (1 March, 2021)
 
 > This version introduces a new dependency: [**LibGit2Sharp**](https://github.com/libgit2/libgit2sharp)
