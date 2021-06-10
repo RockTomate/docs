@@ -7,17 +7,17 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout 🛎️
+      - name: Checkout
         uses: actions/checkout@v2.3.1
 
-      - name: Install and Build 🔧
+      - name: Install and Build
         run: |
           cd website
           yarn install
           yarn build
 
-      - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@4.1.4
+      - name: Publish to GitHub Pages
+        uses: tsunematsu21/actions-publish-gh-pages@v1.0.1
         with:
           branch: gh-pages
-          folder: build
+          dir: website/build/rocktomate-docs
