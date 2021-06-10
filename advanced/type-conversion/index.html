@@ -1,0 +1,110 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Type Conversion · RockTomate</title><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="generator" content="Docusaurus"/><meta name="description" content="After formula resolves a value, RockTomate tries to do a conversion if target type and resolved type are not the same. It can do conversion simple as from `string` to `int` or as complicated as `string[]` to `int`."/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Type Conversion · RockTomate"/><meta property="og:type" content="website"/><meta property="og:url" content="https://support.hardcodelab.com/"/><meta property="og:description" content="After formula resolves a value, RockTomate tries to do a conversion if target type and resolved type are not the same. It can do conversion simple as from `string` to `int` or as complicated as `string[]` to `int`."/><meta property="og:image" content="https://support.hardcodelab.com/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://support.hardcodelab.com/img/undraw_tweetstorm.svg"/><link rel="shortcut icon" href="/img/favicon.ico"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-dark.min.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script><script type="text/javascript" src="/js/code-block-buttons.js"></script><script src="/js/scrollSpy.js"></script><link rel="stylesheet" href="/css/main.css"/><script src="/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/"><h2 class="headerTitle">RockTomate</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"></ul></nav></div></header></div></div><div class="navPusher singleRowMobileNav"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>Advanced</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Information</h3><ul class=""><li class="navListItem"><a class="navItem" href="/info/intro">Introduction</a></li><li class="navListItem"><a class="navItem" href="/info/requirements">Requirements</a></li><li class="navListItem"><a class="navItem" href="/info/terminology">Terminology</a></li><li class="navListItem"><a class="navItem" href="/info/updates">Update History</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">References</h3><ul class=""><li class="navListItem"><a class="navItem" href="/references/step-references">Step References</a></li><li class="navListItem"><a class="navItem" href="/references/macro-references">Macro References</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Workflows</h3><ul class=""><li class="navListItem"><a class="navItem" href="/workflows/creating-job">Creating Job</a></li><li class="navListItem"><a class="navItem" href="/workflows/running-job">Running Job</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">User Interface</h3><ul class=""><li class="navListItem"><a class="navItem" href="/ui/job-editor-window">Job Editor Window</a></li><li class="navListItem"><a class="navItem" href="/ui/step-browser-window">Step Browser Window</a></li><li class="navListItem"><a class="navItem" href="/ui/step-properties-window">Step Properties Window</a></li><li class="navListItem"><a class="navItem" href="/ui/variable-manager-window">Variable Manager Window</a></li><li class="navListItem"><a class="navItem" href="/ui/job-session-console-window">Job Session Console Window</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Event Manager</h3><ul class=""><li class="navListItem"><a class="navItem" href="/event-manager/event-manager-overview">Overview</a></li><li class="navListItem"><a class="navItem" href="/event-manager/event-manager-getting-started">Getting Started</a></li><li class="navListItem"><a class="navItem" href="/event-manager/event-manager-job-execution-properties">Job Execution Properties</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Variables</h3><ul class=""><li class="navListItem"><a class="navItem" href="/variables/variable-basics">Variable Basics</a></li><li class="navListItem"><a class="navItem" href="/variables/root-variables">Root Variables</a></li><li class="navListItem"><a class="navItem" href="/variables/creating-variables">Creating Variables</a></li><li class="navListItem"><a class="navItem" href="/variables/variable-banks">Variable Banks</a></li><li class="navListItem"><a class="navItem" href="/variables/variable-overriding">Variable Overriding</a></li><li class="navListItem"><a class="navItem" href="/variables/persistent-variables">Persistent Variables</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Formulas</h3><ul class=""><li class="navListItem"><a class="navItem" href="/formulas/formula-basics">Formula Basics</a></li><li class="navListItem"><a class="navItem" href="/formulas/resolving-variables">Resolving Variables</a></li><li class="navListItem"><a class="navItem" href="/formulas/macros">Macros</a></li><li class="navListItem"><a class="navItem" href="/formulas/output-fields">Output Fields</a></li><li class="navListItem"><a class="navItem" href="/formulas/multi-array-formulas">Multi-Array Formulas</a></li><li class="navListItem"><a class="navItem" href="/formulas/string-interpolation">String Interpolation</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Advanced</h3><ul class=""><li class="navListItem"><a class="navItem" href="/advanced/adding-third-party-steps">Adding Third-Party Steps</a></li><li class="navListItem"><a class="navItem" href="/advanced/running-from-cli">Running from CLI</a></li><li class="navListItem"><a class="navItem" href="/advanced/creating-step">Creating a Step</a></li><li class="navListItem"><a class="navItem" href="/advanced/creating-macro">Creating a Macro</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/advanced/type-conversion">Type Conversion</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 id="__docusaurus" class="postHeaderTitle">Type Conversion</h1></header><article><div><span><p>After formula resolves a value, RockTomate tries to do a conversion if target type and resolved type are not the same. It can do conversion simple as from <code>string</code> to <code>int</code> or as complicated as <code>string[]</code> to <code>int</code>.</p>
+<p>This article goes into full detail on what to expect from converted values. A conversion between types <code>string</code> and <code>int</code> will be used as an example but this applies to many other common types.</p>
+<p>On the left hand-side is the resolved value type and on the right hand-side is the target type. Target type is a type expected by the formula as requested by the input field of the Step.</p>
+<h2><a class="anchor" aria-hidden="true" id="string-and-int"></a><a href="#string-and-int" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>string</code> and <code>int</code></h2>
+<table>
+<thead>
+<tr><th>Conversion</th><th>Behaviour</th></tr>
+</thead>
+<tbody>
+<tr><td><code>string</code> to <code>int</code></td><td><code>string</code> will be parsed to be of type <code>int</code></td></tr>
+<tr><td><code>int</code> to <code>string</code></td><td><code>int</code>  will be converted to <code>string</code></td></tr>
+</tbody>
+</table>
+<h2><a class="anchor" aria-hidden="true" id="string-and-int-1"></a><a href="#string-and-int-1" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>string[]</code> and <code>int[]</code></h2>
+<table>
+<thead>
+<tr><th>Conversion</th><th>Behaviour</th></tr>
+</thead>
+<tbody>
+<tr><td><code>string[]</code> to <code>int[]</code></td><td>Each individual item will be parsed to <code>int</code> type and placed into an collection of type <code>int[]</code></td></tr>
+<tr><td><code>int[]</code> to <code>string[]</code></td><td>Each individual item will be converted to <code>string</code> type and placed into an collection of type <code>string[]</code></td></tr>
+</tbody>
+</table>
+<h2><a class="anchor" aria-hidden="true" id="string-and-string"></a><a href="#string-and-string" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>string</code> and <code>string[]</code></h2>
+<table>
+<thead>
+<tr><th>Conversion</th><th>Behaviour</th></tr>
+</thead>
+<tbody>
+<tr><td><code>string[]</code> to <code>string</code></td><td>First item of the initial collection will be returned</td></tr>
+<tr><td><code>string</code> to <code>string[]</code></td><td>Resolved value will be put into an collection of type <code>string[]</code></td></tr>
+</tbody>
+</table>
+<h2><a class="anchor" aria-hidden="true" id="string-and-int-2"></a><a href="#string-and-int-2" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>string[]</code> and <code>int</code></h2>
+<table>
+<thead>
+<tr><th>Conversion</th><th>Behaviour</th></tr>
+</thead>
+<tbody>
+<tr><td><code>string[]</code> to <code>int</code></td><td>First item of the initial collection will be parsed into type of <code>int</code> and returned</td></tr>
+<tr><td><code>int</code> to <code>string[]</code></td><td>Resolved value will converted to <code>string</code> and put into an collection of type <code>string[]</code></td></tr>
+</tbody>
+</table>
+<h2><a class="anchor" aria-hidden="true" id="string-and-int-3"></a><a href="#string-and-int-3" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>string</code> and <code>int[]</code></h2>
+<table>
+<thead>
+<tr><th>Conversion</th><th>Behaviour</th></tr>
+</thead>
+<tbody>
+<tr><td><code>string</code> to <code>int[]</code></td><td>String will be parsed into type <code>int</code> and put into collection of type <code>int[]</code></td></tr>
+<tr><td><code>int[]</code> to <code>string</code></td><td>First item of the array will be converted to <code>string</code> and returned</td></tr>
+</tbody>
+</table>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/advanced/creating-macro"><span class="arrow-prev">← </span><span>Creating a Macro</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#string-and-int"><code>string</code> and <code>int</code></a></li><li><a href="#string-and-int-1"><code>string[]</code> and <code>int[]</code></a></li><li><a href="#string-and-string"><code>string</code> and <code>string[]</code></a></li><li><a href="#string-and-int-2"><code>string[]</code> and <code>int</code></a></li><li><a href="#string-and-int-3"><code>string</code> and <code>int[]</code></a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/" class="nav-home"></a><div><h5>Docs</h5><a href="/info/intro.html">Introduction</a><a href="/info/updates.html">Update History</a></div><div><h5>Community</h5><a href="https://forum.unity.com/threads/814203/">Forum Thread</a><a href="https://discord.gg/NzBspd5">Discord</a><a href="https://twitter.com/HardCodeLab" target="_blank" rel="noreferrer noopener">Twitter</a></div><div><h5>More</h5><a href="http://u3d.as/1EfM">Asset Store</a><a href="https://github.com/RockTomate/Docs">Edit on GitHub</a></div></section><section class="copyright">Copyright © 2021 HardCode Lab</section></footer></div></body></html>
