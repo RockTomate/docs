@@ -90,7 +90,7 @@ const siteConfig = {
   cleanUrl: true,
 
   // Base url for all docs
-  docsUrl: 'docs',
+  docsUrl: '',
 
   // Open Graph and Twitter card images.
   ogImage: 'img/undraw_online.svg',
