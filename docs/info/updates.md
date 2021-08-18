@@ -3,6 +3,36 @@ id: updates
 title: Update History
 ---
 
+## 1.1.4 (TBD, 2021)
+
+### Changes & Improvements
+
+#### General
+- [Editor] Miscellaneous performance and optimization improvements
+- [Editor] Disabling a Step now shows a warning message in Step Properties window. You can disable this behaviour in Preferences.
+- [Editor] Added a scroll when dealing with large lists in variable list editor window
+- [Job Session Console] Added a preference option to print Job Session console messages to Unity console window as well
+- Can now mark Steps' input fields as "sensitive", which hides their output value in log messages
+    - *this feature is brand new so please still check your log messages that you share with public. If you think some sensitive info is still leaking please let me know*
+
+#### Steps
+- [Build Player] Specifying file path in the `Output Path` field will now override the `File Name` and won't append an extension. This was done to ensure backwards compatibility with older configurations made  before version `1.1.3`
+- [Upload to Asset Store] Marked `Username` and `Password` fields as sensitive
+
+#### Macros
+- Added: `merge()`
+
+### Bug fixes
+
+
+#### Variables
+- Fixed a bug when Variable Banks did not respect "keep persistent" setting and would save values regardless
+
+#### Steps
+- [Run Job] No longer fails when trying to run a "Loop" step in sub-Job
+
+---
+
 ## 1.1.3 (24 May, 2021)
 
 ### Changes & Improvements
