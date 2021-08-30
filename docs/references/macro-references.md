@@ -3,7 +3,11 @@ id: macro-references
 title: Macro References
 ---
 
-To learn about all available macros, you can check out the [Macro GitHub Wiki](https://github.com/RockTomate/Macros/wiki).
+Here, you'll find information about macros, what they do, their properties and examples. 
+
+You can jump to any macro through the sidebar.
+
+---
 
 ## Input Macros
 
