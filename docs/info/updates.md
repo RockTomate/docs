@@ -9,6 +9,10 @@ title: Update History
 
 ### Changes & Improvements
 
+#### Documentation
+- Macros Wiki on GitHub has been deprecated and is no longer being maintained. All content has been migrated to [Macro References](/references/macro-references) page.
+- Steps Wiki on GitHub has been deprecated and is no longer being maintained. All content has been migrated to [Step References](/references/step-references) page.
+
 #### General
 - [Editor] Miscellaneous performance and optimization improvements
 - [Editor] Disabling a Step now shows a warning message in Step Properties window. You can disable this behaviour in Preferences.
