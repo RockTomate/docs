@@ -1,6 +1,6 @@
 ---
 id: macros
-title: Macros
+title: Using Macros
 ---
 
 Macros are lightweight functions that accept parameters and return a value: just like an ordinary function. They're called from within formulas.
