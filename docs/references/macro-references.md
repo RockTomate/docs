@@ -447,6 +447,57 @@ UnityEngine.Object[]
 
 ---
 
+### `merge`
+
+Merges objects together into a list. You can merge 2 enumerables together or merge enumerable with a non-enumerable object (e.g. when you want to add object to a list).
+
+#### Arguments
+
+| Argument      | Description                            |
+|---------------|----------------------------------------|
+| `IEnumerable` | First list/object that will be merged  |
+| `IEnumerable` | Second list/object that will be merged |
+
+#### Returns
+
+`IEnumerable` - a collection of merged lists/objects
+
+#### Example 1
+
+Given that the following variables are defined:
+
+`listA` = [1, 2, 3, 4, 5]
+
+`listB` = [6, 7, 8, 9, 10]
+
+```
+merge(%listA%, %listB%)
+```
+
+##### Output
+```
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+```
+
+#### Example 2
+
+Given that the following variables are defined:
+
+`buyList` = ["apple", "orange", "tomato"]
+
+`item` = "avocado"
+
+```
+merge(%buyList%, %item%)
+```
+
+##### Output
+```
+["apple", "orange", "tomato", "avocado"]
+```
+
+---
+
 ### `path`
 
 Resolves path with a wildcard in it.
