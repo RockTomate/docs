@@ -5,6 +5,8 @@ title: Update History
 
 ## 1.1.4 (TBD, 2021)
 
+> Due to some major refactoring carried out, you must remove the old version of RockTomate before importing a new one.
+
 ### Changes & Improvements
 
 #### General
@@ -18,18 +20,23 @@ title: Update History
 #### Steps
 - [Build Player] Specifying file path in the `Output Path` field will now override the `File Name` and won't append an extension. This was done to ensure backwards compatibility with older configurations made  before version `1.1.3`
 - [Upload to Asset Store] Marked `Username` and `Password` fields as sensitive
+- [Build Asset Bundles] Added a missing compression option: `Standard LZMA`, which is now a default option
 
 #### Macros
 - Added: `merge()`
 
 ### Bug fixes
 
+#### General
+- [Job Editor] Fixed a bug when editing Job or its Step properties wouldn't mark it as dirty reliably
 
 #### Variables
 - Fixed a bug when Variable Banks did not respect "keep persistent" setting and would save values regardless
 
 #### Steps
 - [Run Job] No longer fails when trying to run a "Loop" step in sub-Job
+- [Run Job] Fixed a bug when step is marked as successful even if sub-job failed `X`
+- [Build Asset Bundles] Now correctly applies `Chunk Based` and `Uncompressed` options to asset bundles
 
 ---
 
