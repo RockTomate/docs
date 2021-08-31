@@ -27,7 +27,7 @@ title: Update History
 - [Build Asset Bundles] Added a missing compression option: `Standard LZMA`, which is now a default option
 
 #### Macros
-- Added: `merge()`
+- Added: [`merge()`](/references/macro-references#merge)
 
 ### Bug fixes
 
