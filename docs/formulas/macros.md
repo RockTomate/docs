@@ -5,6 +5,8 @@ title: Using Macros
 
 Macros are lightweight functions that accept parameters and return a value: just like an ordinary function. They're called from within formulas.
 
+To learn about available macros, see [Macro References](/references/macro-references).
+
 ## Calling Macros
 
 Inside of a formula, macros can be called just like an ordinary function:
