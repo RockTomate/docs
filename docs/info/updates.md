@@ -15,7 +15,8 @@ title: Update History
 
 #### General
 - [Editor] Miscellaneous performance and optimization improvements
-- [Editor] Disabling a Step now shows a warning message in Step Properties window. You can disable this behaviour in Preferences.
+- [Editor] Disabling a Step now shows a warning message in Step Properties window. You can disable this behaviour in `Preferences > RockTomate > Show Step Disabled Warning`
+- [Editor] Can now quickly open Step's .cs file from Step Properties window. This option is turned off by default and can be found in `Preferences > RockTomate > Show Step Script Field`
 - [Editor] Added a scroll when dealing with large lists in variable list editor window
 - [Job Session Console] Added a preference option to print Job Session console messages to Unity console window as well
 - Can now mark Steps' input fields as "sensitive", which hides their output value in log messages
