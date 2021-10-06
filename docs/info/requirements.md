@@ -7,6 +7,8 @@ title: Requirements
 
 RockTomate supports the following Unity versions:
 
+* 2021.1
+* 2020.3
 * 2020.2
 * 2020.1
 * 2019.4
