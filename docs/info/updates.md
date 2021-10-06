@@ -8,6 +8,8 @@ title: Update History
 > Due to the changes in the project hierarchy, the current version of RockTomate must be removed before the new one could be imported.<br><br>
 > Your existing jobs will be unaffected.
 
+> You may notice that steps in your existing jobs will have a status of "Unknown". This is completely normal and will be gone after you run jobs at least once.
+
 ### Changes & Improvements
 
 #### Documentation
@@ -22,6 +24,7 @@ title: Update History
 - [Job Session Console] Added a preference option to print Job Session console messages to Unity console window as well
 - Can now mark Steps' input fields as "sensitive", which hides their output value in log messages
     - *this feature is brand new so please still check your log messages that you share with public. If you think some sensitive info is still leaking please let me know*
+- RockTomate now stores session data in "Library/RockTomateCache" directory
 
 #### Steps
 - [Build Player] Specifying file path in the `Output Path` field will now override the `File Name` and won't append an extension. This was done to ensure backwards compatibility with older configurations made  before version `1.1.3`
@@ -41,7 +44,8 @@ title: Update History
 
 #### Steps
 - [Run Job] No longer fails when trying to run a "Loop" step in sub-Job
-- [Run Job] Fixed a bug when step is marked as successful even if sub-job failed `X`
+- [Run Job] Fixed a bug when step is marked as successful even if sub-job failed
+- [Run Job] Fixed a bug when step is marked as failed if one of the steps in sub-job has failed but is marked as "suppressed"
 - [Build Asset Bundles] Now correctly applies `Chunk Based` and `Uncompressed` options to asset bundles
 
 ---
