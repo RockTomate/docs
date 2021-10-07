@@ -653,80 +653,493 @@ Sets the value of preference by identified key.
 ## External
 
 ### Run Executable
+
+Run any executable and pass arguments to it
+
+#### Input Fields
+
+| Field                | Required | Description                                                                                                           |
+| -------------------- | -------- | --------------------------------------------------------------------------------------------------------------------- |
+| Executable File Path | Yes      | File path or domain to an executable file.                                                                            |
+| Work Directory       | No       | Work directory of an executable                                                                                       |
+| Arguments            | No       | Executable arguments                                                                                                  |
+| Use Shell Execute    | Yes      | *no description provided*                                                                                             |
+| Window Style         | No       | *no description provided*                                                                                             |
+| Exit Timeout         | No       | How long to wait (in milliseconds) for the process to finish and exit. Value below 0 means it will wait indefinitely. |
+| Kill On Timeout      | No       | Should the process be killed if the timeout period has been exceeded?                                                 |
+
+#### Output Fields
+
+| Field      | Description                                               |
+| ---------- | --------------------------------------------------------- |
+| Is Success | Returns true if this step has been executed successfully. |
+| Exit Code  | Exit code of the executable.                              |
+
 ---
 
 ### Run External Job
+
+Runs Job from another Unity project.
+
+#### Input Fields
+
+| Field             | Required | Description                                                                                                           |
+| ----------------- | -------- | --------------------------------------------------------------------------------------------------------------------- |
+| Unity Exe Path    | Yes      | Path to a unity executable that will be run in batch mode.                                                            |
+| Project Path      | Yes      | Path to a project which has a job that will be executed.                                                              |
+| Local Job Path    | Yes      | File path to a job that will be executed (relative to target project path).                                           |
+| Job Arguments     | No       | Arguments that will be passed to a job execution (do not include dash).                                               |
+| Other Arguments   | No       | Additional arguments for Unity executable (must contain dashes to work).                                              |
+| Use Shell Execute | Yes      | *no description provided*                                                                                             |
+| Window Style      | No       | *no description provided*                                                                                             |
+| Exit Timeout      | No       | How long to wait (in milliseconds) for the process to finish and exit. Value below 0 means it will wait indefinitely. |
+| Kill On Timeout   | No       | Should the process be killed if the timeout period has been exceeded?                                                 |
+
+#### Output Fields
+
+| Field      | Description                                               |
+| ---------- | --------------------------------------------------------- |
+| Is Success | Returns true if this step has been executed successfully. |
+| Exit Code  | *no description provided*                                 |
+
 ---
 
 ## General
 
 ### Comment
+
+Places a comment in Job Editor. Doesn't do anything else.
+
+#### Input Fields
+
+*none*
+
+#### Output Fields
+
+| Field      | Description                                               |
+| ---------- | --------------------------------------------------------- |
+| Is Success | Returns true if this step has been executed successfully. |
+
 ---
 
 ### Group
+
+Groups steps together
+
+#### Input Fields
+
+*none*
+
+#### Output Fields
+
+| Field      | Description                                               |
+| ---------- | --------------------------------------------------------- |
+| Is Success | Returns true if this step has been executed successfully. |
+
 ---
 
 ### Invoke Menu Item
+
+Runs an action from a menu item
+
+#### Input Fields
+
+| Field          | Required | Description                                                                                                                                   |
+| -------------- | -------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| Menu Item Path | Yes      | Path to a Menu Item to execute.<br>E.g. if you want to execute "GameObject > Create Empty", then the path would be "GameObject/Create Empty". |
+
+#### Output Fields
+
+| Field      | Description                                               |
+| ---------- | --------------------------------------------------------- |
+| Is Success | Returns true if this step has been executed successfully. |
+
 ---
 
 ### Make Text List
+
+Makes a list of string items.
+
+#### Input Fields
+
+| Field | Required | Description               |
+| ----- | -------- | ------------------------- |
+| Items | No       | *no description provided* |
+
+#### Output Fields
+
+| Field        | Description                                               |
+| ------------ | --------------------------------------------------------- |
+| Is Success   | Returns true if this step has been executed successfully. |
+| Result Items | *no description provided*                                 |
+
 ---
 
 ### Print List
+
+Prints contents of a list, array and anything that implements "IEnumerable".
+
+#### Input Fields
+
+| Field               | Required | Description                                                                                                                    |
+| ------------------- | -------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| Item List           | Yes      | Item list which contents will be printed out.                                                                                  |
+| Type                | Yes      | Type of message which will be logged.                                                                                          |
+| Print Unity Console | Yes      | If true, message will be printed into Unity's Console window.                                                                  |
+| Flush Immediately   | Yes      | If true, the logs will be saved immediately into a log file (along with pending logs) after this message has been printed out. |
+
+#### Output Fields
+
+| Field      | Description                                               |
+| ---------- | --------------------------------------------------------- |
+| Is Success | Returns true if this step has been executed successfully. |
+
 ---
 
 ### Print
+
+Prints a log message to a Unity Console window.
+
+#### Input Fields
+
+| Field             | Required | Description                                                                                                                    |
+| ----------------- | -------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| Message           | No       | Message that will be logged.                                                                                                   |
+| Type              | Yes      | Type of message which will be logged.                                                                                          |
+| Print To Console  | Yes      | If true, message will be printed into RockTomate's Job Session Console window.                                                 |
+| Flush Immediately | Yes      | If true, the logs will be saved immediately into a log file (along with pending logs) after this message has been printed out. |
+
+#### Output Fields
+
+| Field      | Description                                               |
+| ---------- | --------------------------------------------------------- |
+| Is Success | Returns true if this step has been executed successfully. |
+
 ---
 
 ### Run Job
+
+Runs a local Job
+
+#### Input Fields
+
+| Field      | Required | Description                |
+| ---------- | -------- | -------------------------- |
+| Target Job | Yes      | Job that will be executed. |
+
+#### Output Fields
+
+| Field      | Description                                               |
+| ---------- | --------------------------------------------------------- |
+| Is Success | Returns true if this step has been executed successfully. |
+
 ---
 
 ### Set Variable
+
+Updates the value of a variable
+
+#### Input Fields
+
+| Field                | Required | Description                                                                                             |
+| -------------------- | -------- | ------------------------------------------------------------------------------------------------------- |
+| Variable Name        | Yes      | Name of the variable which will be affected. Variable identifiers ('%') will be automatically stripped. |
+| New Value (required) | Yes      | *no description provided*                                                                               |
+| Create New           | Yes      | If true, a new variable will be created with specified value instead of failing the step.               |
+
+#### Output Fields
+
+| Field      | Description                                               |
+| ---------- | --------------------------------------------------------- |
+| Is Success | Returns true if this step has been executed successfully. |
+
 ---
 
 ### Wait
+
+Waits for a specified amount of time.
+
+#### Input Fields
+
+| Field    | Required | Description                              |
+| -------- | -------- | ---------------------------------------- |
+| Duration | Yes      | Amount of time to wait (in milliseconds) |
+
+#### Output Fields
+
+| Field      | Description                                               |
+| ---------- | --------------------------------------------------------- |
+| Is Success | Returns true if this step has been executed successfully. |
+
 ---
 
 ### Instantiate Prefab
+
+Loads a prefab and instantiates it into a currently active Scene.
+
+#### Input Fields
+
+| Field    | Required | Description                                                                         |
+| -------- | -------- | ----------------------------------------------------------------------------------- |
+| Prefab   | Yes      | Prefab that will be instantiated.                                                   |
+| Position | No       | Starting position of the instantiated GameObject.                                   |
+| Name     | No       | Name of the instantiated GameObject (if it's empty then the name won't be altered). |
+
+#### Output Fields
+
+| Field      | Description                                               |
+| ---------- | --------------------------------------------------------- |
+| Is Success | Returns true if this step has been executed successfully. |
+| GameObject | Instantiated GameObject.                                  |
+
 ---
 
 
 ## Git
 
 ### Git - Get Repository
+
+Retrives the repository from specified path. This is a required step in order to use other GIT steps.
+
+#### Input Fields
+
+| Field           | Required | Description                                                                                                                     |
+| --------------- | -------- | ------------------------------------------------------------------------------------------------------------------------------- |
+| Repository Path | Yes      | Directory path where target repository is located. Specified directory must contain .git. folder to be considered a repository. |
+
+#### Output Fields
+
+| Field      | Description                                                            |
+| ---------- | ---------------------------------------------------------------------- |
+| Is Success | Returns true if this step has been executed successfully.              |
+| Repository | Repository resource, which is required by other Git steps to function. |
+
 ---
 
 ### Git - Add Files
+
+Stages files in Git repository
+
+#### Input Fields
+
+| Field          | Required | Description                                                                                                                  |
+| -------------- | -------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| Repository     | Yes      | You need an output value from `Git - Get Repository` step to load the repository.                                            |
+| Files To Stage | Yes      | Array of file paths that will be staged. File paths must be relative to the repository directory path, where `.git` folder is. |
+
+#### Output Fields
+
+| Field      | Description                                               |
+| ---------- | --------------------------------------------------------- |
+| Is Success | Returns true if this step has been executed successfully. |
+
 ---
 
 ### Git - Apply Tag
+
+Applies a tag on a specific commit on current branch.
+
+#### Input Fields
+
+| Field         | Required | Description                                                                                                                                                                                                                                |
+| ------------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Repository    | Yes      | You need an output value from `Git - Get Repository` step to load the repository.                                                                                                                                                          |
+| Tag Name      | Yes      | Name of the tag.                                                                                                                                                                                                                           |
+| Commit Search | No       | Commit onto which tag will be applied.<br>If empty or 0, latest commit will be retrieved.<br>If -N, N to last commit will be retrieved (where N is a number).<br>Alternatively, a commit hash can be supplied directly (searches globally) |
+
+#### Output Fields
+
+| Field      | Description                                               |
+| ---------- | --------------------------------------------------------- |
+| Is Success | Returns true if this step has been executed successfully. |
+
 ---
 
 ### Git - Checkout Branch
+
+Changes local branch.
+
+#### Input Fields
+
+| Field       | Required | Description                                                                       |
+| ----------- | -------- | --------------------------------------------------------------------------------- |
+| Repository  | Yes      | You need an output value from `Git - Get Repository` step to load the repository. |
+| Branch Name | Yes      | Name of the local branch that repository will switch to.                          |
+
+#### Output Fields
+
+| Field      | Description                                               |
+| ---------- | --------------------------------------------------------- |
+| Is Success | Returns true if this step has been executed successfully. |
+
 ---
 
 ### Git - Commit
+
+Commits staged files.
+
+#### Input Fields
+
+| Field      | Required | Description                                                                       |
+| ---------- | -------- | --------------------------------------------------------------------------------- |
+| Repository | Yes      | You need an output value from `Git - Get Repository` step to load the repository. |
+| Message    | Yes      | Commit message.                                                                                  |
+
+#### Output Fields
+
+| Field      | Description                                               |
+| ---------- | --------------------------------------------------------- |
+| Is Success | Returns true if this step has been executed successfully. |
+
 ---
 
 ### Git - Compare Commits
+
+Get file differences between 2 commits of the repository.
+
+#### Input Fields
+
+| Field           | Required | Description                                                                                                                                                                                                                                |
+| --------------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Repository      | Yes      | You need an output value from `Git - Get Repository` step to load the repository.                                                                                                                                                          |
+| Commit Search 1 | Yes      | Commit onto which tag will be applied.<br>If empty or 0, latest commit will be retrieved.<br>If -N, N to last commit will be retrieved (where N is a number).<br>Alternatively, a commit hash can be supplied directly (searches globally) |
+| Commit Search 2 | Yes      | Commit onto which tag will be applied.<br>If empty or 0, latest commit will be retrieved.<br>If -N, N to last commit will be retrieved (where N is a number).<br>Alternatively, a commit hash can be supplied directly (searches globally) |
+
+#### Output Fields
+
+| Field                 | Description                                                            |
+| --------------------- | ---------------------------------------------------------------------- |
+| Is Success            | Returns true if this step has been executed successfully.              |
+| File Paths            | Array of file paths that were affected (added, deleted, renamed etc.). |
+| Added File Paths      | Array of file paths that were added.                                   |
+| Deleted File Paths    | Array of file paths that were deleted.                                 |
+| Renamed File Paths    | Array of file paths that were renamed.                                 |
+| Modified File Paths   | Array of file paths that were modified.                                |
+| Conflicted File Paths | Array of file paths which contents are in merge conflict.              |
+
 ---
 
 ### Git - Create Branch
+
+Creates a new branch.
+
+#### Input Fields
+
+| Field              | Required | Description                                                                                                                                                                                                        |
+| ------------------ | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Repository         | Yes      | You need an output value from `Git - Get Repository` step to load the repository.                                                                                                                                  |
+| New Branch Name    | Yes      | Name of the new branch.                                                                                                                                                                                            |
+| Checkout Behaviour | Yes      | **On Create Only** - Will checkout to new branch only if it has been successfully created<br>**Always** - Will checkout to specified branch even if it already existed before<br>**Never** - Will never checkout to new branch |
+
+#### Output Fields
+
+| Field          | Description                                               |
+| -------------- | --------------------------------------------------------- |
+| Is Success     | Returns true if this step has been executed successfully. |
+| Branch Created | Whether new branch has been created after this step.      |
+
 ---
 
 ### Git - Get Branches
+
+#### Input Fields
+
+| Field      | Required | Description                                                                       |
+| ---------- | -------- | --------------------------------------------------------------------------------- |
+| Repository | Yes      | You need an output value from `Git - Get Repository` step to load the repository. |
+
+#### Output Fields
+
+| Field           | Description                                               |
+| --------------- | --------------------------------------------------------- |
+| Is Success      | Returns true if this step has been executed successfully. |
+| Current Branch  | Name of the currently checked out branch.                 |
+| All Branches    | List of all branch names.                                 |
+| Remote Branches | List of remote branch names.                                                          |
+
 ---
 
 ### Git - Get Branch History
+
+Retrieves branch commit history.
+
+#### Input Fields
+
+| Field        | Required | Description                                                                                                       |
+| ------------ | -------- | ----------------------------------------------------------------------------------------------------------------- |
+| Repository   | Yes      | You need an output value from `Git - Get Repository` step to load the repository.                                 |
+| Branch Name  | Yes      | Name of the branch which history will be returned.                                                                |
+| Commit Count | Yes      | Specifies number of recent commits to return.<br>If 0 or less than 0, the entire commit history will be returned. |
+
+#### Output Fields
+
+| Field          | Description                                                                                                                                                                                                                                                                                                            |
+| -------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Is Success     | Returns true if this step has been executed successfully.                                                                                                                                                                                                                                                              |
+| Commit History | A list of entire commit history.<br>This field returns a list of a Commit instance, which is part of LibGit2Sharp library.<br>You can explore [its source code](https://github.com/libgit2/libgit2sharp/blob/7fc4be5193dbdd08538b4b150332b5a73770e0f6/LibGit2Sharp/Commit.cs) to find out about its properties/fields. |
+
 ---
 
 ### Git - Get Work Directory Files
+
+Get files from the working directory of the repository.
+
+#### Input Fields
+
+| Field              | Required | Description                                                                                               |
+| ------------------ | -------- | --------------------------------------------------------------------------------------------------------- |
+| Repository         | Yes      | You need an output value from `Git - Get Repository` step to load the repository.                         |
+| Retrieve File Type | Yes      | **All** - All affected files will be retrieved.<br>**Staged Only** - Only staged files will be retrieved. |
+
+#### Output Fields
+
+| Field                 | Description                                                           |
+| --------------------- | --------------------------------------------------------------------- |
+| Is Success            | Returns true if this step has been executed successfully.             |
+| File Paths            | Array of file paths that were affected (added, deleted, renamed etc.) |
+| Added File Paths      | Array of file paths that were added.                                  |
+| Deleted File Paths    | Array of file paths that were deleted.                                |
+| Renamed File Paths    | Array of file paths that were renamed.                                |
+| Modified File Paths   | Array of file paths that were modified.                               |
+| Conflicted File Paths | Array of file paths which contents are in merge conflict.             |
+
 ---
 
 ### Git - Init
+
+Initialize a new repository.
+
+#### Input Fields
+
+| Field               | Required | Description                                              |
+| ------------------- | -------- | -------------------------------------------------------- |
+| New Repository Path | Yes      | Directory path where Git repository will be initialized. |
+
+#### Output Fields
+
+| Field      | Description                                               |
+| ---------- | --------------------------------------------------------- |
+| Is Success | Returns true if this step has been executed successfully. |
+
 ---
 
 ### Git - Remove Files
+
+Un-stages files in the target repository.
+
+#### Input Fields
+
+| Field            | Required | Description                                                                                                                       |
+| ---------------- | -------- | --------------------------------------------------------------------------------------------------------------------------------- |
+| Repository       | Yes      | You need an output value from `Git - Get Repository` step to load the repository.                                                 |
+| Files To UnStage | Yes      | Array of file paths that will be un-staged. File paths must be relative to the repository directory path, where `.git` folder is. |
+
+#### Output Fields
+
+| Field      | Description                                               |
+| ---------- | --------------------------------------------------------- |
+| Is Success | Returns true if this step has been executed successfully. |
+
 ---
 
 ## I/O
