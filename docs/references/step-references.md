@@ -1340,9 +1340,43 @@ Updates contents of a text file (or creates a new one if it doesn't exist).
 ## Network
 
 ### Download from URL
+
+Downloads a file from a given URL.
+
+#### Input Fields
+
+| Field                 | Required | Description                                                                                                                                                                                                                                              |
+| --------------------- | -------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| URL                   | Yes      | URL to download files from.                                                                                                                                                                                                                              |
+| Destination File Path | Yes      | Destination directory where downloaded file will be placed.                                                                                                                                                                                              |
+| Redirect Limit        | No       | Indicates the number of redirects which this request will follow before halting with a “Redirect Limit Exceeded” system error. If you do not wish to limit the number of redirects, you may set this property to any negative number. (NOT RECOMMENDED). |
+| Use Chunked Transfer  | Yes      | Indicates whether the `UnityWebRequest` system should employ the HTTP/1.1 chunked-transfer encoding method.                                                                                                                                                |
+
+#### Output Fields
+
+| Field      | Description                                               |
+| ---------- | --------------------------------------------------------- |
+| Is Success | Returns true if this step has been executed successfully. |
+
 ---
 
 ### Submit Web Request
+
+Submits a web request.
+
+#### Input Fields
+
+| Field        | Required | Description                                |
+| ------------ | -------- | ------------------------------------------ |
+| Request Type | Yes      | Type of request.                           |
+| URL          | Yes      | Destination where request will be sent to. |
+
+#### Output Fields
+
+| Field      | Description                                               |
+| ---------- | --------------------------------------------------------- |
+| Is Success | Returns true if this step has been executed successfully. |
+
 ---
 
 
