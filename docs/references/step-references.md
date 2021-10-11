@@ -1477,15 +1477,88 @@ Sets a specified scene as active. Note that it must be loaded.
 ## String
 
 ### Append to String
+
+Appends a string to another string
+
+#### Input Fields
+
+| Field       | Required | Description                               |
+| ----------- | -------- | ----------------------------------------- |
+| String      | Yes      | String to append to                       |
+| New Strings | Yes      | Strings to append to the original string. |
+| Add Newline | Yes      | Adds a newline before appending string.   |
+
+#### Output Fields
+
+| Field      | Description                                               |
+| ---------- | --------------------------------------------------------- |
+| Is Success | Returns true if this step has been executed successfully. |
+| Output     | Result string.                                            |
+
 ---
 
 ### String Contains
+
+Checks if string contains a specified string/character
+
+#### Input Fields
+
+| Field                  | Required | Description                                                                              |
+| ---------------------- | -------- | ---------------------------------------------------------------------------------------- |
+| String                 | Yes      | String which will be searched.                                                           |
+| Text                   | Yes      | Text which will be searched. Serves as a pattern if 'Use Regex' option is enabled.       |
+| Use Regex              | Yes      | If true, then text will be searched based on regex.                                      |
+| String Comparison Mode | Yes      | Comparison mode used when comparing strings (not used if 'Use Regex' option is enabled). |
+| Regex Options          | Yes      | Regex Options (not used if 'Use Regex' option is disabled).                              |
+
+#### Output Fields
+
+| Field      | Description                                               |
+| ---------- | --------------------------------------------------------- |
+| Is Success | Returns true if this step has been executed successfully. |
+
 ---
 
 ### String Replace
+
+Replaces a part of string with another string
+
+#### Input Fields
+
+| Field     | Required | Description                                           |
+| --------- | -------- | ----------------------------------------------------- |
+| String    | Yes      | Input string                                          |
+| Old Value | Yes      | A string to be replaced                               |
+| New Value | Yes      | A string to replace all occurrences of the old value. |
+
+#### Output Fields
+
+| Field      | Description                                               |
+| ---------- | --------------------------------------------------------- |
+| Is Success | Returns true if this step has been executed successfully. |
+| Output     | Result string                                                          |
+
 ---
 
 ### Trim String
+
+Trims a String
+
+#### Input Fields
+
+| Field      | Required | Description                                                                                                                                                                                       |
+| ---------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| String     | Yes      | String to be trimmed                                                                                                                                                                              |
+| Trim Chars | No       | Characters that will be trimmed (whitespace by default).                                                                                                                                          |
+| Trim Mode  | Yes      | How will a string be trimmed<br>**Default** - trims both beginning and trailing parts<br>**Trim Start** - only beginning part will be trimmed<br>**Trim End** - only ending part will be trimmed. |
+
+#### Output Fields
+
+| Field      | Description                                               |
+| ---------- | --------------------------------------------------------- |
+| Is Success | Returns true if this step has been executed successfully. |
+| Output     | Result string                                                          |
+
 ---
 
 
