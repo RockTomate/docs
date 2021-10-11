@@ -1383,24 +1383,94 @@ Submits a web request.
 ## Scene
 
 ### Close Scene
+
+Closes a scene from the editor.
+
+#### Input Fields
+
+| Field  | Required | Description                                                           |
+| ------ | -------- | --------------------------------------------------------------------- |
+| Scene  | Yes      | Scene which will be unloaded.                                         |
+| Remove | Yes      | Whether or not should the scene be removed from the Hierarchy window. |
+
+#### Output Fields
+
+| Field      | Description                                               |
+| ---------- | --------------------------------------------------------- |
+| Is Success | Returns true if this step has been executed successfully. |
+
 ---
 
 ### Create GameObject
+
+TODO
+
 ---
 
 ### Delete GameObject
+
+TODO
+
 ---
 
 ### Find GameObjects
+
+TODO
+
 ---
 
 ### Open Scene
+
+Opens a target unity scene in editor.
+
+#### Input Fields
+
+| Field      | Required | Description                                              |
+| ---------- | -------- | -------------------------------------------------------- |
+| Scene      | Yes      | Scene which will be opened.                              |
+| Scene Mode | Yes      | Specify how scene should be opened.                      |
+| Set Active | Yes      | Whether or not to set the scene active when it's opened. |
+
+#### Output Fields
+
+| Field      | Description                                               |
+| ---------- | --------------------------------------------------------- |
+| Is Success | Returns true if this step has been executed successfully. |
+
 ---
 
 ### Save Scenes
+
+Saves all open unity scenes.
+
+#### Input Fields
+
+*none*
+
+#### Output Fields
+
+| Field      | Description                                               |
+| ---------- | --------------------------------------------------------- |
+| Is Success | Returns true if this step has been executed successfully. |
+
 ---
 
 ### Set Scene Active
+
+Sets a specified scene as active. Note that it must be loaded.
+
+#### Input Fields
+
+| Field | Required | Description                        |
+| ----- | -------- | ---------------------------------- |
+| Scene | Yes      | Scene which will be set to active. |
+
+#### Output Fields
+
+| Field      | Description                                               |
+| ---------- | --------------------------------------------------------- |
+| Is Success | Returns true if this step has been executed successfully. |
+
 ---
 
 
