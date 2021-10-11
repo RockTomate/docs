@@ -1565,7 +1565,41 @@ Trims a String
 ## ZIP
 
 ### Compress to ZIP
+
+Compresses directory files to a ZIP archive
+
+#### Input Fields
+
+| Field            | Required | Description                                                                                                                     |
+| ---------------- | -------- | ------------------------------------------------------------------------------------------------------------------------------- |
+| Output Path      | Yes      | Output file path of an exported ZIP file.                                                                                       |
+| Target Directory | Yes      | Directory that will be compressed into a ZIP.                                                                                   |
+| Put In Directory | Yes      | If enabled, source files are placed into root folder inside of archive. Root Folder will be named after the outputted ZIP file. |
+
+#### Output Fields
+
+| Field      | Description                                               |
+| ---------- | --------------------------------------------------------- |
+| Is Success | Returns true if this step has been executed successfully. |
+
 ---
 
 ### Extract ZIP
+
+Extracts contents of a ZIP archive file into target directory
+
+#### Input Fields
+
+| Field                 | Required | Description                                                                     |
+| --------------------- | -------- | ------------------------------------------------------------------------------- |
+| Zip Path              | Yes      | Path to a ZIP archive file that will be extracted.                              |
+| Output Directory Path | Yes      | Path to a directory which will hold extracted files.                            |
+| Overwrite Files       | Yes      | If true, extracted files will overwrite existing files in the Output Directory. |
+
+#### Output Fields
+
+| Field      | Description                                               |
+| ---------- | --------------------------------------------------------- |
+| Is Success | Returns true if this step has been executed successfully. |
+
 ---
