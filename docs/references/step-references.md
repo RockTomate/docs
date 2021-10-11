@@ -1145,33 +1145,196 @@ Un-stages files in the target repository.
 ## I/O
 
 ### Copy Directory
+
+Copies directory to a specified destination
+
+#### Input Fields
+
+| Field                 | Required | Description                                                                |
+| --------------------- | -------- | -------------------------------------------------------------------------- |
+| Source Directory Path | Yes      | Path of the directory that will be copied.                                 |
+| New Directory Path    | Yes      | Path to a new directory.                                                   |
+| Overwrite             | Yes      | If enabled, the destination copy will be overwritten if it already exists. |
+| Excluded Extensions   | No       | Paths which will be excluded.                                              |
+| Excluded Paths        | No       | Extensions that will be excluded (e.g. ".meta").                           |
+
+#### Output Fields
+
+| Field      | Description                                               |
+| ---------- | --------------------------------------------------------- |
+| Is Success | Returns true if this step has been executed successfully. |
+
 ---
 
 ### Copy File
+
+Copies file to another destination
+
+#### Input Fields
+
+| Field              | Required | Description                                                                |
+| ------------------ | -------- | -------------------------------------------------------------------------- |
+| Source File Path   | Yes      | Path to the file which will be copied.                                     |
+| New File Copy Path | Yes      | Destination file path.                                                     |
+| Overwrite          | Yes      | If enabled, the destination copy will be overwritten if it already exists. |
+
+#### Output Fields
+
+| Field      | Description                                               |
+| ---------- | --------------------------------------------------------- |
+| Is Success | Returns true if this step has been executed successfully. |
+
 ---
 
 ### Create Directory
+
+Creates an empty directory
+
+#### Input Fields
+
+| Field          | Required | Description                          |
+| -------------- | -------- | ------------------------------------ |
+| Directory Path | Yes      | Path where directory will be created |
+
+#### Output Fields
+
+| Field      | Description                                               |
+| ---------- | --------------------------------------------------------- |
+| Is Success | Returns true if this step has been executed successfully. |
+
 ---
 
 ### Delete Directory
+
+Deletes a directory
+
+| Field          | Required | Description                                |
+| -------------- | -------- | ------------------------------------------ |
+| Directory Path | Yes      | Path of a directory which will be deleted. |
+
+#### Output Fields
+
+| Field      | Description                                               |
+| ---------- | --------------------------------------------------------- |
+| Is Success | Returns true if this step has been executed successfully. |
+
 ---
 
 ### Delete File
+
+Deletes a file
+
+#### Input Fields
+
+| Field     | Required | Description                          |
+| --------- | -------- | ------------------------------------ |
+| File Path | Yes      | Path of a file which will be deleted |
+
+#### Output Fields
+
+| Field      | Description                                               |
+| ---------- | --------------------------------------------------------- |
+| Is Success | Returns true if this step has been executed successfully. |
+
 ---
 
 ### Move Directory
+
+Moves directory from one place to another. Creates a destination directory if it doesn't exist.
+
+#### Input Fields
+
+| Field                 | Required | Description                                                                                         |
+| --------------------- | -------- | --------------------------------------------------------------------------------------------------- |
+| Source Directory Path | Yes      | Path to the directory which will be moved.                                                          |
+| Destination Directory | Yes      | Directory to where the directory will be moved to.                                                  |
+| Overwrite             | Yes      | If enabled, directories with duplicate contents will be overwritten. Otherwise, it will be skipped. |
+
+#### Output Fields
+
+| Field      | Description                                               |
+| ---------- | --------------------------------------------------------- |
+| Is Success | Returns true if this step has been executed successfully. |
+
 ---
 
 ### Move File
+
+Moves file from one place to another. Creates a destination directory if it doesn't exist.
+
+#### Input Fields
+
+| Field                 | Required | Description                                                                                      |
+| --------------------- | -------- | ------------------------------------------------------------------------------------------------ |
+| Source File Path      | Yes      | Path to the file which will be moved.                                                            |
+| Destination File Path | Yes      | New file path of the source file.                                                                |
+| Overwrite             | Yes      | If enabled, duplicate file in destination folder will be deleted. Otherwise, it will be skipped. |
+
+#### Output Fields
+
+| Field      | Description                                               |
+| ---------- | --------------------------------------------------------- |
+| Is Success | Returns true if this step has been executed successfully. |
+
 ---
 
 ### Open File/Folder
+
+Opens a file/folder with a default program.
+
+#### Input Fields
+
+| Field | Required | Description                                       |
+| ----- | -------- | ------------------------------------------------- |
+| Path  | Yes      | Path to a file or directory which will be opened. |
+
+#### Output Fields
+
+| Field      | Description                                               |
+| ---------- | --------------------------------------------------------- |
+| Is Success | Returns true if this step has been executed successfully. |
+
 ---
 
 ### Rename Directory
+
+Renames a specified directory
+
+#### Input Fields
+
+| Field              | Required | Description                               |
+| ------------------ | -------- | ----------------------------------------- |
+| Directory Path     | Yes      | Path to a directory that will be renamed. |
+| New Directory Name | Yes      | New name for the directory.               |
+
+#### Output Fields
+
+| Field              | Description                                               |
+| ------------------ | --------------------------------------------------------- |
+| Is Success         | Returns true if this step has been executed successfully. |
+| New Directory Path | Returns a path to a new directory.                        |
+
 ---
 
 ### Update Text File
+
+Updates contents of a text file (or creates a new one if it doesn't exist).
+
+#### Input Fields
+
+| Field                    | Required | Description                                                       |
+| ------------------------ | -------- | ----------------------------------------------------------------- |
+| File Path                | Yes      | Path to a file that will be affected.                             |
+| Contents                 | No       | Contents of the new file.                                         |
+| Write Mode               | No       | Whether to add a newline at the end an individual content or not. |
+| Duplicate File Behaviour | No       | Specifies what to do if file already exists.                      |
+
+#### Output Fields
+
+| Field      | Description                                               |
+| ---------- | --------------------------------------------------------- |
+| Is Success | Returns true if this step has been executed successfully. |
+
 ---
 
 ## Network
