@@ -17,6 +17,7 @@ title: Update History
 - Steps Wiki on GitHub has been deprecated and is no longer being maintained. All content has been migrated to [Step References](/references/step-references) page.
 
 #### General
+- Added support for Unity 2021.2
 - [Editor] Miscellaneous performance and optimization improvements
 - [Editor] Disabling a Step now shows a warning message in Step Properties window. You can disable this behaviour in `Preferences > RockTomate > Show Step Disabled Warning`
 - [Editor] Can now quickly open Step's .cs file from Step Properties window. This option is turned off by default and can be found in `Preferences > RockTomate > Show Step Script Field`
