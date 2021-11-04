@@ -3,7 +3,7 @@ id: updates
 title: Update History
 ---
 
-## 1.1.4 (TBD, 2021)
+## 1.1.4 (4 November, 2021)
 
 > Due to the changes in the project hierarchy, the current version of RockTomate must be removed before the new one could be imported.<br><br>
 > Your existing jobs will be unaffected.
