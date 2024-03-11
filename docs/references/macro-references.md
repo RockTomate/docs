@@ -765,6 +765,103 @@ sum('3', '2')
 
 ---
 
+### `dirpath`
+
+Same as `path`, but gives slightly more options and returns directories only.
+
+#### Arguments
+
+| Argument | Description                                                        |
+| -------- | ------------------------------------------------------------------ |
+| `string` | File path to resolve                                               |
+| `bool`   | Whether to convert paths to be relative to root project directory  |
+| `bool`   | Whether the search should be shallow or not (top directories only) |
+
+#### Returns
+
+`string[]` - resolved paths
+
+#### Example
+
+Given the following project structure:
+
+```
+Assets/
+├── Scenes/
+│   ├── scene1.unity
+│   ├── scene2.unity
+│   ├── scene3.unity
+│   └── scene4.unity
+└── Scripts/
+    ├── PlayerController.cs
+    ├── EnemyController.cs
+    └── InventoryManager.cs
+```
+
+Formula
+
+```
+path('%AssetsDir%/*', true, false)
+```
+
+##### Output
+
+```
+Assets/Scenes/
+Assets/Scripts/
+```
+
+---
+
+### `filepath`
+
+Same as `path`, but gives slightly more options.
+
+#### Arguments
+
+| Argument | Description                                                        |
+| -------- | ------------------------------------------------------------------ |
+| `string` | File path to resolve                                               |
+| `bool`   | Whether to convert paths to be relative to root project directory  |
+| `bool`   | Whether the search should be shallow or not (top directories only) |
+
+#### Returns
+
+`string[]` - resolved paths
+
+#### Example
+
+Given the following project structure:
+
+```
+Assets/
+├── Scenes/
+│   ├── scene1.unity
+│   ├── scene2.unity
+│   ├── scene3.unity
+│   └── scene4.unity
+└── Scripts/
+    ├── PlayerController.cs
+    ├── EnemyController.cs
+    └── InventoryManager.cs
+```
+
+Formula
+
+```
+path('%AssetsDir%/*.cs', true, false)
+```
+
+##### Output
+
+```
+Assets/Scripts/PlayerController.cs
+Assets/Scripts/EnemyController.cs
+Assets/Scripts/InventoryManager.cs
+```
+
+---
+
 ## Output Macros
 
 ### `addto`
