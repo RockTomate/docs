@@ -666,10 +666,12 @@ Run any executable and pass arguments to it
 
 #### Output Fields
 
-| Field      | Description                                               |
-| ---------- | --------------------------------------------------------- |
-| Is Success | Returns true if this step has been executed successfully. |
-| Exit Code  | Exit code of the executable.                              |
+| Field           | Description                                                                                        |
+| --------------- | -------------------------------------------------------------------------------------------------- |
+| Is Success      | Returns true if this step has been executed successfully.                                          |
+| Exit Code       | Exit code of the executable.                                                                       |
+| Standard Output | Textual output of the running process (if any). Will be ignored if "Use Shell Execute" is enabled. |
+| Error Output    | Exit code of the executable. Will be ignored if "Use Shell Execute" is enabled.                    |
 
 ---
 

@@ -28,6 +28,7 @@ title: Update History
 
 -   [Build Asset Bundle] Removed `Deterministic` field as it's no longer being used
 -   [Set Variable] Improved variable assignment
+-   [Run Executable] Added `StandardOutput` and `ErrorOutput` output fields to pipe process error/output back to RockTomate
 
 #### Macros
 
