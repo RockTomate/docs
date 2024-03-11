@@ -8,10 +8,9 @@ title: Update History
 ### Changes & Improvements
 
 > RockTomate no longer ships Odin Serializer DLL. Instead, it includes its source code in its own assembly definition.
-> If you're using Odin Serializer or any Odin products you should be unaffected.
-> Your existing Jobs won't be affected, but, as always, you should backup your work before an upgrade.
+> Because of changes with Odin Serializer, the **current version of RockTomate must be removed before importing a new one**.
 
-> Because of changes with Odin Serializer, the current version of RockTomate must be removed before importing a new one.
+> There should be no conflict with other Odin-based products in your project. Your existing Jobs won't be affected, but you should **always backup your project before an upgrade**.
 
 #### General
 
@@ -27,7 +26,7 @@ title: Update History
 
 #### Steps
 
--   [Build Asset Bundle] Removed `Deterministic` field
+-   [Build Asset Bundle] Removed `Deterministic` field as it's no longer being used
 -   [Set Variable] Improved variable assignment
 
 #### Macros
