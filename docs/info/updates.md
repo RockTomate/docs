@@ -7,10 +7,15 @@ title: Update History
 
 ### Changes & Improvements
 
+> RockTomate no longer ships Odin Serializer DLL. Instead, it includes its source code in its own assembly definition. If you're using Odin Serializer or any Odin products you should be unaffected.
+> Because of changes with Odin Serializer, the current version of RockTomate must be removed before importing a new one.
+
 #### General
 
 -   Added support for Unity 2022.3
--   Removed support for 2018.4
+-   Removed support for Unity 2018.4
+-   Api compatibility level now requires `.NET 4.x` or higher
+-   Updated Odin Serializer library (2024.2.27 - `3d90af7a`)
 -   [Condition Editor Control] String comparison improvements. Can now compare the ordering of strings. For example (e.g. `"A"` < `"B"` would resolve to `true`)
 
 #### Step Browser Window
@@ -19,11 +24,13 @@ title: Update History
 
 #### Steps
 
--
+-   [Build Asset Bundle] Removed `Deterministic` field
+-   [Set Variable] Improved variable assignment
 
 #### Macros
 
--   example
+-   Added: [`dirpath()`](/references/macro-references#dirpath)
+-   Added: [`filepath()`](/references/macro-references#filepath)
 
 ### Bug fixes
 
