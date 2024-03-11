@@ -562,12 +562,12 @@ Formula
 path('%AssetsDir%/*.cs', true)
 ```
 
-##### Output (if contents printed out)
+##### Output
 
 ```
-Assets/PlayerController.cs
-Assets/EnemyController.cs
-Assets/InventoryManager.cs
+Assets/Scripts/PlayerController.cs
+Assets/Scripts/EnemyController.cs
+Assets/Scripts/InventoryManager.cs
 ```
 
 ---
