@@ -3,6 +3,50 @@ id: updates
 title: Update History
 ---
 
+## 1.1.5 (11 March, 2024)
+
+### Changes & Improvements
+
+#### General
+
+-   Added support for Unity 2022.3
+-   Removed support for 2018.4
+-   [Condition Editor Control] String comparison improvements. Can now compare the ordering of strings. For example (e.g. `"A"` < `"B"` would resolve to `true`)
+
+#### Step Browser Window
+
+-   Can now add Steps to "Favourites"
+
+#### Steps
+
+-
+
+#### Macros
+
+-   example
+
+### Bug fixes
+
+#### General
+
+-   Fixed a bug where creating variables of UnityScene type would cause errors
+-   Fixed a runtime error that would happen when trying to open a Job asset file after upgrading Unity versions
+-   Fixed an exception being thrown when variable bank editor window reloads after re-compilation
+
+#### Variables
+
+-   [Variable Manager] Can now search variables
+-   [Variable Bank Window] Can now search variables
+-   Fixed an error that would occur when opening array editor
+-   Improvements to array-based formulas
+-   Fixed a bug when interpolated macros would resolve to `System.String[]` instead to an actual value. It will now interpolate the 1st item in an array instead.
+
+#### Steps
+
+-   [Print] Fixed a bug when "Print to Console" option wasn't working properly
+
+---
+
 ## 1.1.4 (4 November, 2021)
 
 > Due to the changes in the project hierarchy, the current version of RockTomate must be removed before the new one could be imported.<br><br>
