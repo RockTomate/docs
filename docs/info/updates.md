@@ -7,7 +7,10 @@ title: Update History
 
 ### Changes & Improvements
 
-> RockTomate no longer ships Odin Serializer DLL. Instead, it includes its source code in its own assembly definition. If you're using Odin Serializer or any Odin products you should be unaffected.
+> RockTomate no longer ships Odin Serializer DLL. Instead, it includes its source code in its own assembly definition.
+> If you're using Odin Serializer or any Odin products you should be unaffected.
+> Your existing Jobs won't be affected, but, as always, you should backup your work before an upgrade.
+
 > Because of changes with Odin Serializer, the current version of RockTomate must be removed before importing a new one.
 
 #### General
@@ -36,7 +39,7 @@ title: Update History
 
 #### General
 
--   Fixed a bug where creating variables of UnityScene type would cause errors
+-   Fixed a bug where creating variables of `UnityScene` type would cause errors
 -   Fixed a runtime error that would happen when trying to open a Job asset file after upgrading Unity versions
 -   Fixed an exception being thrown when variable bank editor window reloads after re-compilation
 
