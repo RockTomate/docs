@@ -11,17 +11,15 @@ Just like anything else, variable bank references can either be directly referen
 
 ![](/assets/variables/variable-banks.png)
 
-
 ## Creating a Variable Bank
 
-To create a Variable Bank, in the Assets window, navigate to `Create > RockTomate > Variable Bank`. This should now create a variable bank asset. 
+To create a Variable Bank, in the Assets window, navigate to `Create > RockTomate > Variable Bank`. This should now create a variable bank asset.
 
 Double click on a variable bank and a familiar window pops up.
 
 ![](/assets/variables/variable-bank-editor.png)
 
 From there, the workflow is the same as if you were creating custom variables for a Job: click + icon and create your desired variable. Once done, close the window.
-
 
 ## Adding a reference
 

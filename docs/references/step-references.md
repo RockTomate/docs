@@ -3,7 +3,7 @@ id: step-references
 title: Step References
 ---
 
-Here, you'll find information about steps, what they do, their properties and examples. 
+Here, you'll find information about steps, what they do, their properties and examples.
 
 You can jump to any step through the sidebar.
 
@@ -185,9 +185,9 @@ Clears lightmap data
 
 #### Output Fields
 
-| Field                    | Description                                               |
-| ------------------------ | --------------------------------------------------------- |
-| Is Success               | Returns true if this step has been executed successfully. |
+| Field      | Description                                               |
+| ---------- | --------------------------------------------------------- |
+| Is Success | Returns true if this step has been executed successfully. |
 
 ---
 
@@ -205,12 +205,11 @@ Computes static Occlusion Culling of a currently active Scene.
 
 #### Output Fields
 
-| Field                    | Description                                               |
-| ------------------------ | --------------------------------------------------------- |
-| Is Success               | Returns true if this step has been executed successfully. |
+| Field      | Description                                               |
+| ---------- | --------------------------------------------------------- |
+| Is Success | Returns true if this step has been executed successfully. |
 
 ---
-
 
 ## Building
 
@@ -237,9 +236,9 @@ Builds all asset bundles specified in the editor.
 
 #### Output Fields
 
-| Field       | Description                                                                                                                                                                                                         |
-| ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Is Success  | Returns true if this step has been executed successfully.                                                                                                                                                           |
+| Field      | Description                                               |
+| ---------- | --------------------------------------------------------- |
+| Is Success | Returns true if this step has been executed successfully. |
 
 ---
 
@@ -256,10 +255,10 @@ Builds a Project to an executable.
 | Scene Paths                      | No       | The scenes to be included in the build. If empty, the currently open scene will be built. Paths are relative to the project folder (Assets/MyLevels/MyScene.unity). |
 | Asset Bundle Manifest Path       | No       | The path to an manifest file describing all of the asset bundles used in the build.                                                                                 |
 | Build Target                     | Yes      | The platform to build.                                                                                                                                              |
-| Development Build                | Yes      | *no description provided*                                                                                                                                           |
-| Build Scripts Only               | Yes      | *no description provided*                                                                                                                                           |
-| Build Additional Streamed Scenes | Yes      | *no description provided*                                                                                                                                           |
-| Don't Compress Asset Bundle      | Yes      | *no description provided*                                                                                                                                           |
+| Development Build                | Yes      | _no description provided_                                                                                                                                           |
+| Build Scripts Only               | Yes      | _no description provided_                                                                                                                                           |
+| Build Additional Streamed Scenes | Yes      | _no description provided_                                                                                                                                           |
+| Don't Compress Asset Bundle      | Yes      | _no description provided_                                                                                                                                           |
 
 #### Output Fields
 
@@ -298,12 +297,12 @@ Compiles C# scripts into DLL
 | Trademark                    | No       | Value specifying trademark information.<br>`[assembly: AssemblyTrademark("")]`                                                                                                                               |
 | Product                      | No       | Value specifying product information.<br>`[assembly: AssemblyProduct("")]`                                                                                                                                   |
 | Additional References        | No       | Paths to references.                                                                                                                                                                                         |
-| Additional Compile Symbols   | No       | *no description provided*                                                                                                                                                                                    |
+| Additional Compile Symbols   | No       | _no description provided_                                                                                                                                                                                    |
 | Build Target Compile Symbols | No       | Specify from which build target should compile symbols be copied.                                                                                                                                            |
 | Include Debug Info           | Yes      | Whether or not debug information should be included in the DLL.                                                                                                                                              |
 | Optimize                     | Yes      | Whether DLL should be optimized.                                                                                                                                                                             |
 | Unsafe                       | Yes      | Whether unsafe code should be allowed.                                                                                                                                                                       |
-| Additional Arguments         | Yes      | Additional compile arguments.                                                                                                                                                                                                             |
+| Additional Arguments         | Yes      | Additional compile arguments.                                                                                                                                                                                |
 
 #### Output Fields
 
@@ -321,7 +320,7 @@ Changes build target of the project
 
 | Field        | Required | Description               |
 | ------------ | -------- | ------------------------- |
-| Build Target | Yes      | *no description provided* |
+| Build Target | Yes      | _no description provided_ |
 
 #### Output Fields
 
@@ -331,7 +330,6 @@ Changes build target of the project
 
 ---
 
-
 ## Control Flow
 
 ### ELSE
@@ -340,7 +338,7 @@ Executes child steps if prior condition returned false.
 
 #### Input Fields
 
-*none*
+_none_
 
 #### Output Fields
 
@@ -356,7 +354,7 @@ Exits a current scope
 
 #### Input Fields
 
-*none*
+_none_
 
 #### Output Fields
 
@@ -392,7 +390,7 @@ Iterates through each child action.
 
 | Field            | Required | Description                                                                |
 | ---------------- | -------- | -------------------------------------------------------------------------- |
-| Item List        | Yes      | *no description provided*                                                  |
+| Item List        | Yes      | _no description provided_                                                  |
 | Iterator Name    | Yes      | Name of the variable which will represent the current item of the loop.    |
 | Index Count Name | No       | Name of a variable which will represent the current iteration of the loop. |
 
@@ -431,7 +429,7 @@ Stops a currently running job.
 
 #### Input Fields
 
-*none*
+_none_
 
 #### Output Fields
 
@@ -460,7 +458,6 @@ Iterates through each child action while condition is true.
 
 ---
 
-
 ## Editor Prefs
 
 ### Delete All EditorPrefs
@@ -469,7 +466,7 @@ Deletes all EditorPrefs keys and their values.
 
 #### Input Fields
 
-*none*
+_none_
 
 #### Output Fields
 
@@ -586,9 +583,9 @@ Sets the value of preference by identified key.
 
 #### Output Fields
 
-| Field        | Description                                               |
-| ------------ | --------------------------------------------------------- |
-| Is Success   | Returns true if this step has been executed successfully. |
+| Field      | Description                                               |
+| ---------- | --------------------------------------------------------- |
+| Is Success | Returns true if this step has been executed successfully. |
 
 ---
 
@@ -605,9 +602,9 @@ Sets the value of preference by identified key.
 
 #### Output Fields
 
-| Field        | Description                                               |
-| ------------ | --------------------------------------------------------- |
-| Is Success   | Returns true if this step has been executed successfully. |
+| Field      | Description                                               |
+| ---------- | --------------------------------------------------------- |
+| Is Success | Returns true if this step has been executed successfully. |
 
 ---
 
@@ -624,9 +621,9 @@ Sets the value of preference by identified key.
 
 #### Output Fields
 
-| Field        | Description                                               |
-| ------------ | --------------------------------------------------------- |
-| Is Success   | Returns true if this step has been executed successfully. |
+| Field      | Description                                               |
+| ---------- | --------------------------------------------------------- |
+| Is Success | Returns true if this step has been executed successfully. |
 
 ---
 
@@ -643,12 +640,11 @@ Sets the value of preference by identified key.
 
 #### Output Fields
 
-| Field        | Description                                               |
-| ------------ | --------------------------------------------------------- |
-| Is Success   | Returns true if this step has been executed successfully. |
+| Field      | Description                                               |
+| ---------- | --------------------------------------------------------- |
+| Is Success | Returns true if this step has been executed successfully. |
 
 ---
-
 
 ## External
 
@@ -663,8 +659,8 @@ Run any executable and pass arguments to it
 | Executable File Path | Yes      | File path or domain to an executable file.                                                                            |
 | Work Directory       | No       | Work directory of an executable                                                                                       |
 | Arguments            | No       | Executable arguments                                                                                                  |
-| Use Shell Execute    | Yes      | *no description provided*                                                                                             |
-| Window Style         | No       | *no description provided*                                                                                             |
+| Use Shell Execute    | Yes      | _no description provided_                                                                                             |
+| Window Style         | No       | _no description provided_                                                                                             |
 | Exit Timeout         | No       | How long to wait (in milliseconds) for the process to finish and exit. Value below 0 means it will wait indefinitely. |
 | Kill On Timeout      | No       | Should the process be killed if the timeout period has been exceeded?                                                 |
 
@@ -690,8 +686,8 @@ Runs Job from another Unity project.
 | Local Job Path    | Yes      | File path to a job that will be executed (relative to target project path).                                           |
 | Job Arguments     | No       | Arguments that will be passed to a job execution (do not include dash).                                               |
 | Other Arguments   | No       | Additional arguments for Unity executable (must contain dashes to work).                                              |
-| Use Shell Execute | Yes      | *no description provided*                                                                                             |
-| Window Style      | No       | *no description provided*                                                                                             |
+| Use Shell Execute | Yes      | _no description provided_                                                                                             |
+| Window Style      | No       | _no description provided_                                                                                             |
 | Exit Timeout      | No       | How long to wait (in milliseconds) for the process to finish and exit. Value below 0 means it will wait indefinitely. |
 | Kill On Timeout   | No       | Should the process be killed if the timeout period has been exceeded?                                                 |
 
@@ -700,7 +696,7 @@ Runs Job from another Unity project.
 | Field      | Description                                               |
 | ---------- | --------------------------------------------------------- |
 | Is Success | Returns true if this step has been executed successfully. |
-| Exit Code  | *no description provided*                                 |
+| Exit Code  | _no description provided_                                 |
 
 ---
 
@@ -712,7 +708,7 @@ Places a comment in Job Editor. Doesn't do anything else.
 
 #### Input Fields
 
-*none*
+_none_
 
 #### Output Fields
 
@@ -728,7 +724,7 @@ Groups steps together
 
 #### Input Fields
 
-*none*
+_none_
 
 #### Output Fields
 
@@ -764,14 +760,14 @@ Makes a list of string items.
 
 | Field | Required | Description               |
 | ----- | -------- | ------------------------- |
-| Items | No       | *no description provided* |
+| Items | No       | _no description provided_ |
 
 #### Output Fields
 
 | Field        | Description                                               |
 | ------------ | --------------------------------------------------------- |
 | Is Success   | Returns true if this step has been executed successfully. |
-| Result Items | *no description provided*                                 |
+| Result Items | _no description provided_                                 |
 
 ---
 
@@ -844,7 +840,7 @@ Updates the value of a variable
 | Field                | Required | Description                                                                                             |
 | -------------------- | -------- | ------------------------------------------------------------------------------------------------------- |
 | Variable Name        | Yes      | Name of the variable which will be affected. Variable identifiers ('%') will be automatically stripped. |
-| New Value (required) | Yes      | *no description provided*                                                                               |
+| New Value (required) | Yes      | _no description provided_                                                                               |
 | Create New           | Yes      | If true, a new variable will be created with specified value instead of failing the step.               |
 
 #### Output Fields
@@ -894,7 +890,6 @@ Loads a prefab and instantiates it into a currently active Scene.
 
 ---
 
-
 ## Git
 
 ### Git - Get Repository
@@ -922,9 +917,9 @@ Stages files in Git repository
 
 #### Input Fields
 
-| Field          | Required | Description                                                                                                                  |
-| -------------- | -------- | ---------------------------------------------------------------------------------------------------------------------------- |
-| Repository     | Yes      | You need an output value from `Git - Get Repository` step to load the repository.                                            |
+| Field          | Required | Description                                                                                                                    |
+| -------------- | -------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| Repository     | Yes      | You need an output value from `Git - Get Repository` step to load the repository.                                              |
 | Files To Stage | Yes      | Array of file paths that will be staged. File paths must be relative to the repository directory path, where `.git` folder is. |
 
 #### Output Fields
@@ -983,7 +978,7 @@ Commits staged files.
 | Field      | Required | Description                                                                       |
 | ---------- | -------- | --------------------------------------------------------------------------------- |
 | Repository | Yes      | You need an output value from `Git - Get Repository` step to load the repository. |
-| Message    | Yes      | Commit message.                                                                                  |
+| Message    | Yes      | Commit message.                                                                   |
 
 #### Output Fields
 
@@ -1025,10 +1020,10 @@ Creates a new branch.
 
 #### Input Fields
 
-| Field              | Required | Description                                                                                                                                                                                                        |
-| ------------------ | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Repository         | Yes      | You need an output value from `Git - Get Repository` step to load the repository.                                                                                                                                  |
-| New Branch Name    | Yes      | Name of the new branch.                                                                                                                                                                                            |
+| Field              | Required | Description                                                                                                                                                                                                                    |
+| ------------------ | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Repository         | Yes      | You need an output value from `Git - Get Repository` step to load the repository.                                                                                                                                              |
+| New Branch Name    | Yes      | Name of the new branch.                                                                                                                                                                                                        |
 | Checkout Behaviour | Yes      | **On Create Only** - Will checkout to new branch only if it has been successfully created<br>**Always** - Will checkout to specified branch even if it already existed before<br>**Never** - Will never checkout to new branch |
 
 #### Output Fields
@@ -1055,7 +1050,7 @@ Creates a new branch.
 | Is Success      | Returns true if this step has been executed successfully. |
 | Current Branch  | Name of the currently checked out branch.                 |
 | All Branches    | List of all branch names.                                 |
-| Remote Branches | List of remote branch names.                                                          |
+| Remote Branches | List of remote branch names.                              |
 
 ---
 
@@ -1350,7 +1345,7 @@ Downloads a file from a given URL.
 | URL                   | Yes      | URL to download files from.                                                                                                                                                                                                                              |
 | Destination File Path | Yes      | Destination directory where downloaded file will be placed.                                                                                                                                                                                              |
 | Redirect Limit        | No       | Indicates the number of redirects which this request will follow before halting with a “Redirect Limit Exceeded” system error. If you do not wish to limit the number of redirects, you may set this property to any negative number. (NOT RECOMMENDED). |
-| Use Chunked Transfer  | Yes      | Indicates whether the `UnityWebRequest` system should employ the HTTP/1.1 chunked-transfer encoding method.                                                                                                                                                |
+| Use Chunked Transfer  | Yes      | Indicates whether the `UnityWebRequest` system should employ the HTTP/1.1 chunked-transfer encoding method.                                                                                                                                              |
 
 #### Output Fields
 
@@ -1378,7 +1373,6 @@ Submits a web request.
 | Is Success | Returns true if this step has been executed successfully. |
 
 ---
-
 
 ## Scene
 
@@ -1445,7 +1439,7 @@ Saves all open unity scenes.
 
 #### Input Fields
 
-*none*
+_none_
 
 #### Output Fields
 
@@ -1472,7 +1466,6 @@ Sets a specified scene as active. Note that it must be loaded.
 | Is Success | Returns true if this step has been executed successfully. |
 
 ---
-
 
 ## String
 
@@ -1536,7 +1529,7 @@ Replaces a part of string with another string
 | Field      | Description                                               |
 | ---------- | --------------------------------------------------------- |
 | Is Success | Returns true if this step has been executed successfully. |
-| Output     | Result string                                                          |
+| Output     | Result string                                             |
 
 ---
 
@@ -1557,10 +1550,9 @@ Trims a String
 | Field      | Description                                               |
 | ---------- | --------------------------------------------------------- |
 | Is Success | Returns true if this step has been executed successfully. |
-| Output     | Result string                                                          |
+| Output     | Result string                                             |
 
 ---
-
 
 ## ZIP
 

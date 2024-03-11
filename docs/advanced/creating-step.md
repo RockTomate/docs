@@ -7,10 +7,9 @@ RockTomate has a flexible framework which allows you to create your own Steps an
 
 We’ll be making a step that takes two integers, executes a mathematical operation on them, and returns an outcome.
 
-
 ## Creating a Class
 
-First things first, create a C# script inside of an Editor folder, or make sure it’s within an assembly definition which will be compiled only in Editor. 
+First things first, create a C# script inside of an Editor folder, or make sure it’s within an assembly definition which will be compiled only in Editor.
 
 To make things easier to manage, place the script inside of `RockTomate/Scripts/Steps/` directory. Let’s name our script `MathStep`.
 
@@ -53,14 +52,13 @@ Now, if you go back to Unity and let it compile our changes, we should see new S
 
 ![](/assets/advanced/new-step.png)
 
-
 ## Adding Input Fields
 
 For our math operation, we want to add the following input values:
 
-* First value
-* Second value
-* Whether we want to add, subtract, multiply or divide both values
+-   First value
+-   Second value
+-   Whether we want to add, subtract, multiply or divide both values
 
 Declare variables as follows:
 
@@ -117,7 +115,6 @@ Add our new step into a Job, select it and you should see the following in the I
 
 ![](/assets/advanced/step-properties.png)
 
-
 ## Marking fields as "Required"
 
 Marking fields as "Required" is useful to avoid null reference exception errors and lets user know if the field is necessary for execution (like fields in a survey form). If the field is left empty (unless it's a value type like integer or float), Step will not run.
@@ -131,10 +128,9 @@ To mark a field as required, add `required` argument to a target `InputField` at
 public float ValueA;
 ```
 
-Fields marked as "required" will have an asterisk (*) symbol next to it.
+Fields marked as "required" will have an asterisk (\*) symbol next to it.
 
 ![](/assets/advanced/required-field.png)
-
 
 ## Adding Output Fields
 
@@ -152,7 +148,6 @@ public float Result;
 Now, if you come back to the editor, you’ll see a new field.
 
 ![](/assets/advanced/new-output-field.png)
-
 
 ## Implementing Logic
 
@@ -246,7 +241,6 @@ public class MathStep : SimpleStep
    }
 }
 ```
-
 
 ## Testing our Step
 

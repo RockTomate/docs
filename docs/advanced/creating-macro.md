@@ -50,8 +50,8 @@ protected override MacroParameter[] GetParameters()
 {
     return new[]
     {
-        MacroParameter.Create<string>("First string."), 
-        MacroParameter.Create<string>("Second string."), 
+        MacroParameter.Create<string>("First string."),
+        MacroParameter.Create<string>("Second string."),
     };
 }
 ```

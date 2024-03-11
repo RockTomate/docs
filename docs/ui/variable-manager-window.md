@@ -23,6 +23,6 @@ Lists all [variable bank](variables/variable-banks.md) references.
 
 ![](/assets/ui/variable-manager-window-tab-root.png)
 
-Lists all discovered [root variables](variables/root-variables.md). It also shows evaluated values for each where possible. 
+Lists all discovered [root variables](variables/root-variables.md). It also shows evaluated values for each where possible.
 
 Right-clicking any variable gives you an option to copy it in `%VAR_NAME%` format.

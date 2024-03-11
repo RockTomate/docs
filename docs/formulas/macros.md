@@ -41,7 +41,6 @@ length(Hello )
 Output: 5
 ```
 
-
 And if we use quotation marks:
 
 ```

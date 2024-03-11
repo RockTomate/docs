@@ -23,8 +23,8 @@ An asset file will be created with an extension of `rock.job.asset` (in Unity it
 
 For what we're trying to achieve, we would need the following steps:
 
-* Loop - iterating through any collection item (List, Array etc.)
-* Print Log - prints any object in a Unity console.
+-   Loop - iterating through any collection item (List, Array etc.)
+-   Print Log - prints any object in a Unity console.
 
 1. In [Step Browser Window](ui/step-browser-window.md), locate and double-click on `Loop` step to add it to the job.
 2. Locate Print Log and drag it on top of the loop. Loop step is a special step which accepts child steps.
@@ -43,9 +43,10 @@ To access steps' properties, simply click on it in the Job Editor Window. Your I
 
 This field only accepts formulas. Formulas should return a value which could be equivalent to a collection. If resultant value is not an array, it will be converted to one. (see [Type Conversion](advanced/type-conversion.md) section to know more)
 
-We'll use `path` macro which requires two arguments: a path containing a wildcard and whether or not to convert paths to be relative to the `Assets` directory. 
-* [Argument 1] We want to iterate through the whole `Assets` directory, so we'll use a root variable `%AssetsDir%` to get it. Then we add `/*.unity` to indicate that we want all file paths with `.unity` extension in that directory.
-* [Argument 2] We'll want to convert it so we'll set it to `true`.
+We'll use `path` macro which requires two arguments: a path containing a wildcard and whether or not to convert paths to be relative to the `Assets` directory.
+
+-   [Argument 1] We want to iterate through the whole `Assets` directory, so we'll use a root variable `%AssetsDir%` to get it. Then we add `/*.unity` to indicate that we want all file paths with `.unity` extension in that directory.
+-   [Argument 2] We'll want to convert it so we'll set it to `true`.
 
 This is our final formula: `path(%AssetsDir%/*.unity, true)`
 

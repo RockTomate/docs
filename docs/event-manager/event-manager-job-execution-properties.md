@@ -17,11 +17,11 @@ With "Execution Conditions" option enabled, this Job will be executed only if th
 
 ## Variable Overriding
 
-Some events supported by the Event Manager also pass parameters. For example, "Project Built" event has "Build Target" and "Output Path". 
+Some events supported by the Event Manager also pass parameters. For example, "Project Built" event has "Build Target" and "Output Path".
 
 You have access to those parameters via, which ultimately can be used to override job variables, or create entirely new ones.
 
-By pressing "Add Override..." you have an option to either include an existing Job variable or create a new one. 
+By pressing "Add Override..." you have an option to either include an existing Job variable or create a new one.
 
 ![](../assets/event-manager/event-manager-creating-variable-override-existing-variable.gif)
 

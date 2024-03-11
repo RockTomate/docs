@@ -27,9 +27,9 @@ We want to append multiple strings into one. To do that, we'll use "Append to St
 
 ## Variable Scope
 
-As you may have noticed, we didn't need to define a variable at design-time, it's been created at runtime. 
+As you may have noticed, we didn't need to define a variable at design-time, it's been created at runtime.
 
-Be aware that dynamically created variables are available only in the current scope. Meaning, if you've created this variable within another Step such as "Loop" or "Group", it won't be available outside. 
+Be aware that dynamically created variables are available only in the current scope. Meaning, if you've created this variable within another Step such as "Loop" or "Group", it won't be available outside.
 
 Logically, it will be available anywhere if the variable has been dynamically created at the root.
 

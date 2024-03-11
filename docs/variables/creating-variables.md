@@ -3,7 +3,7 @@ id: creating-variables
 title: Creating Variables
 ---
 
-Creating your own variables is possible inside of “Custom” tab of Variable Manager window. 
+Creating your own variables is possible inside of “Custom” tab of Variable Manager window.
 
 While there, simply click a ‘+’ icon and you’ll be presented with a small popup dialog.
 

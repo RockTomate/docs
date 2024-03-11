@@ -5,7 +5,7 @@ title: Step Browser Window
 
 ![](/assets/ui/step-browser-window.png)
 
-Step Browser Window is where steps are added into the [Job Editor Window](ui/job-editor-window.md). 
+Step Browser Window is where steps are added into the [Job Editor Window](ui/job-editor-window.md).
 
 All steps are split into categories. Hovering over them reveals their description.
 

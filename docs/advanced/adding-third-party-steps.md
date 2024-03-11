@@ -5,10 +5,10 @@ title: Adding Third-Party Steps
 
 ## Supported Plugins
 
-- [Turbo Builder PRO](https://assetstore.unity.com/packages/slug/98714) by [Crosstales](https://assetstore.unity.com/publishers/9785)
-- [Turbo Switch PRO](https://assetstore.unity.com/packages/slug/60040) by [Crosstales](https://assetstore.unity.com/publishers/9785)
-- [Turbo Backup PRO](https://assetstore.unity.com/packages/slug/98711) by [Crosstales](https://assetstore.unity.com/publishers/9785)
-- [Maintainer](https://assetstore.unity.com/packages/slug/32199) by [CodeStage](https://assetstore.unity.com/publishers/3918)
+-   [Turbo Builder PRO](https://assetstore.unity.com/packages/slug/98714) by [Crosstales](https://assetstore.unity.com/publishers/9785)
+-   [Turbo Switch PRO](https://assetstore.unity.com/packages/slug/60040) by [Crosstales](https://assetstore.unity.com/publishers/9785)
+-   [Turbo Backup PRO](https://assetstore.unity.com/packages/slug/98711) by [Crosstales](https://assetstore.unity.com/publishers/9785)
+-   [Maintainer](https://assetstore.unity.com/packages/slug/32199) by [CodeStage](https://assetstore.unity.com/publishers/3918)
 
 ---
 

@@ -3,7 +3,7 @@ id: running-from-cli
 title: Running from CLI
 ---
 
-You can also run RockTomate jobs from the command-line interface when you’re running Unity in batch mode. 
+You can also run RockTomate jobs from the command-line interface when you’re running Unity in batch mode.
 
 ```shell
 "C:\Path\To\Unity.exe" -batchMode -projectPath "D:\Projects\HardCodeLab\RockTomate" -executeMethod "HardCodeLab.RockTomate.CLI.RunJob" "Assets/AutomatedJob.rock.job"
@@ -11,16 +11,16 @@ You can also run RockTomate jobs from the command-line interface when you’re r
 
 ## Arguments
 
-| Argument       | Parameter(s)                                                      | Description                                            |
-|----------------|-------------------------------------------------------------------|--------------------------------------------------------|
-| -batchMode     | *none*                                                            | Makes Unity run in batch mode                          |
-| -projectPath   | "D:\Projects\HardCodeLab\RockTomate"                              | Opens a Unity project                                  |
-| -executeMethod | "HardCodeLab.RockTomate.CLI.RunJob"  "Assets/AutomatedJob.rock.job" | Runs a Job with path of "Assets/AutomatedJob.rock.job" |
+| Argument       | Parameter(s)                                                       | Description                                            |
+| -------------- | ------------------------------------------------------------------ | ------------------------------------------------------ |
+| -batchMode     | _none_                                                             | Makes Unity run in batch mode                          |
+| -projectPath   | "D:\Projects\HardCodeLab\RockTomate"                               | Opens a Unity project                                  |
+| -executeMethod | "HardCodeLab.RockTomate.CLI.RunJob" "Assets/AutomatedJob.rock.job" | Runs a Job with path of "Assets/AutomatedJob.rock.job" |
 
 You can find the full list of Unity's command line arguments [here](https://docs.unity3d.com/Manual/CommandLineArguments.html).
 
 > Do not pass `-quit` argument when running a Job as it would immediately closes Unity without letting the Job to finish. This is because RockTomate was designed to be a non-blocking process to let users interact with UI while the Job is running.<br><br>
-RockTomate will quit Unity after the Job has done running (passing `0` as the exit code if it succeeded or `1` if it failed).
+> RockTomate will quit Unity after the Job has done running (passing `0` as the exit code if it succeeded or `1` if it failed).
 
 ## Passing Variables
 

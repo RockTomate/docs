@@ -12,34 +12,34 @@ On the left hand-side is the resolved value type and on the right hand-side is t
 ## `string` and `int`
 
 | Conversion        | Behaviour                                   |
-|-------------------|---------------------------------------------|
+| ----------------- | ------------------------------------------- |
 | `string` to `int` | `string` will be parsed to be of type `int` |
-| `int` to `string` | `int`  will be converted to `string`        |
+| `int` to `string` | `int` will be converted to `string`         |
 
 ## `string[]` and `int[]`
 
 | Conversion            | Behaviour                                                                                                |
-|-----------------------|----------------------------------------------------------------------------------------------------------|
+| --------------------- | -------------------------------------------------------------------------------------------------------- |
 | `string[]` to `int[]` | Each individual item will be parsed to `int` type and placed into an collection of type `int[]`          |
 | `int[]` to `string[]` | Each individual item will be converted to `string` type and placed into an collection of type `string[]` |
 
 ## `string` and `string[]`
 
 | Conversion             | Behaviour                                                        |
-|------------------------|------------------------------------------------------------------|
+| ---------------------- | ---------------------------------------------------------------- |
 | `string[]` to `string` | First item of the initial collection will be returned            |
 | `string` to `string[]` | Resolved value will be put into an collection of type `string[]` |
 
 ## `string[]` and `int`
 
-| Conversion             | Behaviour                                                                               |
-|------------------------|-----------------------------------------------------------------------------------------|
-| `string[]` to `int`    | First item of the initial collection will be parsed into type of `int` and returned     |
-| `int` to `string[]`    | Resolved value will converted to `string` and put into an collection of type `string[]` |
+| Conversion          | Behaviour                                                                               |
+| ------------------- | --------------------------------------------------------------------------------------- |
+| `string[]` to `int` | First item of the initial collection will be parsed into type of `int` and returned     |
+| `int` to `string[]` | Resolved value will converted to `string` and put into an collection of type `string[]` |
 
 ## `string` and `int[]`
 
-| Conversion             | Behaviour                                                                               |
-|------------------------|-----------------------------------------------------------------------------------------|
-| `string` to `int[]`    | String will be parsed into type `int` and put into collection of type `int[]`           |
-| `int[]` to `string`    | First item of the array will be converted to `string` and returned                      |
+| Conversion          | Behaviour                                                                     |
+| ------------------- | ----------------------------------------------------------------------------- |
+| `string` to `int[]` | String will be parsed into type `int` and put into collection of type `int[]` |
+| `int[]` to `string` | First item of the array will be converted to `string` and returned            |
