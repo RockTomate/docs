@@ -19,6 +19,7 @@ title: Update History
 -   Api compatibility level now requires `.NET 4.x` or higher
 -   Updated Odin Serializer library (2024.2.27 - `3d90af7a`)
 -   [Condition Editor Control] String comparison improvements. Can now compare the ordering of strings. For example (e.g. `"A"` < `"B"` would resolve to `true`)
+-   [Condition Editor Control] Can now selectively enable/disable each condition statement
 
 #### Step Browser Window
 
