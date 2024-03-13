@@ -21,10 +21,6 @@ title: Update History
 -   [Condition Editor Control] String comparison improvements. Can now compare the ordering of strings. For example (e.g. `"A"` < `"B"` would resolve to `true`)
 -   [Condition Editor Control] Can now selectively enable/disable each condition statement
 
-#### Step Browser Window
-
--   Can now add Steps to "Favourites"
-
 #### Steps
 
 -   [Build Asset Bundle] Removed `Deterministic` field as it's no longer being used
