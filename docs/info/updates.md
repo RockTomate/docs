@@ -3,7 +3,7 @@ id: updates
 title: Update History
 ---
 
-## 1.1.5 (11 March, 2024)
+## 1.1.5 (14 March, 2024)
 
 ### Changes & Improvements
 
